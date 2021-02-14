@@ -18,6 +18,20 @@
 	      <version>4.13.2</version>
 	      <scope>test</scope>
       	</dependency>
+      	
+      	<dependency>
+	      <groupId>jersey-container-servlet-core</groupId>
+	      <artifactId>jersey-container-servlet-core</artifactId>
+	      <version>${jersey.version}</version>
+	      <scope>test</scope>
+      	</dependency>
+      	
+      	<dependency>
+	      <groupId>jersey-hk2</groupId>
+	      <artifactId>jersey-hk2</artifactId>
+	      <version>${jersey.version}</version>
+	      <scope>test</scope>
+      	</dependency>
   	
   	</dependencies>
   </dependencyManagement>
