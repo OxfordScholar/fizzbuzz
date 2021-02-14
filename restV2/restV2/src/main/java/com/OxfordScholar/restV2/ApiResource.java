@@ -12,7 +12,7 @@ import java.util.HashMap;
 /**
  * Root resource
  */
-@Path("rest/v3/users/{DN}")
+@Path("/users/{DN}")
 public class ApiResource {
 
     /**
