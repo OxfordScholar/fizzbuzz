@@ -6,4 +6,29 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>access-controller-endpoints</artifactId>
+  
+  
+   	<dependencies>
+  	
+		<dependency>
+	      <groupId>junit</groupId>
+	      <artifactId>junit</artifactId>
+	      <scope>test</scope>
+      	</dependency>
+      	
+      	<dependency>
+	      <groupId>jersey-container-servlet-core</groupId>
+	      <artifactId>jersey-container-servlet-core</artifactId>
+	      <scope>test</scope>
+      	</dependency>
+      	
+      	<dependency>
+	      <groupId>jersey-hk2</groupId>
+	      <artifactId>jersey-hk2</artifactId>
+	      <scope>test</scope>
+      	</dependency>
+  	
+  	</dependencies>
+  
+  
 </project>
