@@ -1,6 +1,5 @@
 package oxfordscholar.services.accesscontroller.app;
 
-import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.glassfish.jersey.server.ResourceConfig;
 import jakarta.ws.rs.ApplicationPath;
 
