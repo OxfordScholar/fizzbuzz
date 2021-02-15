@@ -7,6 +7,7 @@
   
   <properties>
   	<jersey.version>3.0.1</jersey.version>
+  	<jetty.version>11.0.0</jetty.version>
   </properties>
   
   <dependencyManagement>
@@ -20,17 +21,33 @@
       	</dependency>
       	
       	<dependency>
-	      <groupId>jersey-container-servlet-core</groupId>
+	      <groupId>org.glassfish.jersey.containers</groupId>
 	      <artifactId>jersey-container-servlet-core</artifactId>
 	      <version>${jersey.version}</version>
-	      <scope>test</scope>
       	</dependency>
       	
       	<dependency>
-	      <groupId>jersey-hk2</groupId>
+	      <groupId>org.glassfish.jersey.inject</groupId>
 	      <artifactId>jersey-hk2</artifactId>
 	      <version>${jersey.version}</version>
-	      <scope>test</scope>
+      	</dependency>
+  	
+      	<dependency>
+	      <groupId>org.glassfish.jersey.inject</groupId>
+	      <artifactId>jersey-hk2</artifactId>
+	      <version>${jersey.version}</version>
+      	</dependency>
+      	
+      	<dependency>
+	      <groupId>org.eclipse.jetty</groupId>
+	      <artifactId>jetty-server</artifactId>
+	      <version>${jetty.version}</version>
+      	</dependency>
+      	
+     	<dependency>
+	      <groupId>org.eclipse.jetty</groupId>
+	      <artifactId>jetty-servlet</artifactId>
+	      <version>${jetty.version}</version>
       	</dependency>
   	
   	</dependencies>
@@ -38,5 +55,6 @@
   
   <modules>
   	<module>access-controller-endpoints</module>
+  	<module>access-controller-components</module>
   </modules>
 </project>

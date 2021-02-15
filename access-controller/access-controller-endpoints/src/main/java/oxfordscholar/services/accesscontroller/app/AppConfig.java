@@ -1,11 +1,16 @@
 package oxfordscholar.services.accesscontroller.app;
 
-public class AppConfig
-{
+import org.eclipse.jetty.servlet.ServletContextHandler;
+import org.glassfish.jersey.server.ResourceConfig;
+import jakarta.ws.rs.ApplicationPath;
 
-	public static void main(String[] arg)
-	{
-		
-	}
+@ApplicationPath("rest/v3")
+public class AppConfig extends ResourceConfig
+{
 	
+	public AppConfig()
+	{
+		packages("com.oxfordscholar.access-controller");
+	}
+
 }
