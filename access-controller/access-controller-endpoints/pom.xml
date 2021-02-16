@@ -77,7 +77,7 @@
 							                    </fileSets>
 							                    <files>
 							                         <file>
-							                              <source>${project.build.directory}/ ${project.artifactId}:${project.version} .jar</source>
+							                              <source>${project.build.directory}/${project.artifactId}:${project.version}.jar</source>
 							                                <outputDirectory>usr/local/${project.parent.name}/lib</outputDirectory>
 							                         </file>
 							                    </files>
@@ -89,10 +89,7 @@
 							                  <JAVA_MAIN_CLASS>oxfordscholar.services.accesscontroller.app.Main</JAVA_MAIN_CLASS>
 							                </env>
                                         <ports><port>9092</port></ports>	
-                                        
-                                        <pluginGroups>
-								        	<pluginGroup>org.eclipse.jkube</pluginGroup>
-								      	</pluginGroups>
+                                       
                                         
                                         <!-- <cmd><shell>java -jar /usr/local/${projct.artifactId}-${project.version}.jar</shell></cmd>   -->	  
                                         <entryPoint><exec>java</exec><exec>-jar</exec><exec>/usr/local/${projct.artifactId}-${project.version}.jar</exec></entryPoint>                                      
