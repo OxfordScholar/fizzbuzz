@@ -1,16 +1,5 @@
 [INFO] Error stacktraces are turned on.
 [INFO] Scanning for projects...
-[WARNING] 
-[WARNING] Some problems were encountered while building the effective model for oxfordscholar.services:access-controller-endpoints:jar:0.0.1-SNAPSHOT
-[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.glassfish.jersey.inject:jersey-hk2:jar -> duplicate declaration of version ${jersey.version} @ oxfordscholar.services:access-controller:0.0.1-SNAPSHOT, /Users/dev/Documents/Github/fizzbuzz/access-controller/pom.xml, line 37, column 20
-[WARNING] 
-[WARNING] Some problems were encountered while building the effective model for oxfordscholar.services:access-controller:pom:0.0.1-SNAPSHOT
-[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.glassfish.jersey.inject:jersey-hk2:jar -> duplicate declaration of version ${jersey.version} @ line 37, column 20
-[WARNING] 
-[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
-[WARNING] 
-[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
-[WARNING] 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Build Order:
 [INFO] 
@@ -23,20 +12,32 @@
 [INFO] --------------------------------[ pom ]---------------------------------
 [INFO] 
 [INFO] --- kubernetes-maven-plugin:1.1.0:build (default-cli) @ access-controller ---
+[WARNING] Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+[WARNING] k8s: Cannot access cluster for detecting mode: Unknown host kubernetes.default.svc: nodename nor servname provided, or not known
+[WARNING] Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+[INFO] k8s: Running in Kubernetes mode
+[INFO] k8s: Building Docker image in Kubernetes mode
+[INFO] Disabling docker build for pom packaging
+[INFO] 
+[INFO] ---------< oxfordscholar.services:access-controller-endpoints >---------
+[INFO] Building access-controller-endpoints 0.0.1-SNAPSHOT                [2/3]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- kubernetes-maven-plugin:1.1.0:build (default-cli) @ access-controller-endpoints ---
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary for access-controller 0.0.1-SNAPSHOT:
 [INFO] 
-[INFO] access-controller .................................. FAILURE [  0.759 s]
-[INFO] access-controller-endpoints ........................ SKIPPED
+[INFO] access-controller .................................. SUCCESS [  3.294 s]
+[INFO] access-controller-endpoints ........................ FAILURE [  0.073 s]
 [INFO] access-controller-components ....................... SKIPPED
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  0.974 s
-[INFO] Finished at: 2021-02-17T09:00:55+11:00
+[INFO] Total time:  3.556 s
+[INFO] Finished at: 2021-02-17T09:15:17+11:00
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.eclipse.jkube:kubernetes-maven-plugin:1.1.0:build (default-cli) on project access-controller: Unable to parse configuration of mojo org.eclipse.jkube:kubernetes-maven-plugin:1.1.0:build for parameter pluginGroups: Cannot find 'pluginGroups' in class org.eclipse.jkube.kit.config.image.build.BuildConfiguration -> [Help 1]
-org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.eclipse.jkube:kubernetes-maven-plugin:1.1.0:build (default-cli) on project access-controller: Unable to parse configuration of mojo org.eclipse.jkube:kubernetes-maven-plugin:1.1.0:build for parameter pluginGroups: Cannot find 'pluginGroups' in class org.eclipse.jkube.kit.config.image.build.BuildConfiguration
+[ERROR] Failed to execute goal org.eclipse.jkube:kubernetes-maven-plugin:1.1.0:build (default-cli) on project access-controller-endpoints: Unable to parse configuration of mojo org.eclipse.jkube:kubernetes-maven-plugin:1.1.0:build for parameter pluginGroups: Cannot find 'pluginGroups' in class org.eclipse.jkube.kit.config.image.build.BuildConfiguration -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.eclipse.jkube:kubernetes-maven-plugin:1.1.0:build (default-cli) on project access-controller-endpoints: Unable to parse configuration of mojo org.eclipse.jkube:kubernetes-maven-plugin:1.1.0:build for parameter pluginGroups: Cannot find 'pluginGroups' in class org.eclipse.jkube.kit.config.image.build.BuildConfiguration
     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:215)
     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
@@ -126,3 +127,6 @@ Caused by: org.codehaus.plexus.component.configurator.ComponentConfigurationExce
 [ERROR] 
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginConfigurationException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :access-controller-endpoints
