@@ -9,7 +9,7 @@ public class AppConfig extends ResourceConfig
 	
 	public AppConfig()
 	{
-		packages("com.oxfordscholar.access-controller");
+		packages("oxfordscholar.services.accesscontroller.resources");
 	}
 
 }

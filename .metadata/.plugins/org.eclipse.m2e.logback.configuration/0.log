@@ -1,1 +1,100 @@
 2021-02-15 08:41:52,269 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-02-16 10:10:14,508 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2021-02-16 10:33:19,223 [Worker-26: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-02-16 10:33:45,844 [Worker-28: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: oxfordscholar.services:access-controller:0.0.1-SNAPSHOT @ /Users/dev/Documents/Github/fizzbuzz/access-controller/pom.xml.
+2021-02-16 10:33:46,231 [Worker-28: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: oxfordscholar.services:access-controller-components:0.0.1-SNAPSHOT @ /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-components/pom.xml.
+2021-02-16 10:33:46,297 [Worker-28: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: oxfordscholar.services:access-controller-endpoints:0.0.1-SNAPSHOT @ /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/pom.xml.
+2021-02-16 10:33:46,523 [Worker-28: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /access-controller-endpoints/src/main/java
+2021-02-16 10:33:46,523 [Worker-28: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /access-controller-endpoints/src/test/java
+2021-02-16 10:33:46,587 [Worker-28: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /access-controller-components/src/main/java
+2021-02-16 10:33:46,588 [Worker-28: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /access-controller-components/src/test/java
+2021-02-16 10:33:46,610 [Worker-28: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 3 project(s) in 1 sec
+2021-02-16 10:33:47,481 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 10:33:47,482 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-components/src/main/resources
+2021-02-16 10:33:47,483 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 10:33:47,484 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-components/src/test/resources
+2021-02-16 10:33:47,853 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 10:33:47,854 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/main/resources
+2021-02-16 10:33:47,855 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 10:33:47,855 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/test/resources
+2021-02-16 10:34:03,391 [Worker-19: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.OxfordScholar:restV2:0.0.1-SNAPSHOT @ /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/pom.xml.
+2021-02-16 10:34:03,923 [Worker-19: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /restV2/src/main/java
+2021-02-16 10:34:03,924 [Worker-19: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /restV2/src/test/java
+2021-02-16 10:34:04,284 [Worker-19: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2021-02-16 10:34:04,624 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-16 10:34:04,624 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/main/resources
+2021-02-16 10:34:04,625 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-16 10:34:04,625 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/test/resources
+2021-02-16 11:26:01,873 [Worker-57: Launching Executing clean in _Users_dev_Documents_Github_fizzbuzz_access-controller] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/dev/Documents/Github/fizzbuzz/access-controller
+2021-02-16 11:26:01,885 [Worker-57: Launching Executing clean in _Users_dev_Documents_Github_fizzbuzz_access-controller] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
+2021-02-16 11:26:03,633 [Worker-52: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 11:26:03,635 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-components/src/main/resources
+2021-02-16 11:26:03,636 [Worker-52: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 11:26:03,637 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-components/src/test/resources
+2021-02-16 11:26:03,655 [Worker-52: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 11:26:03,655 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/main/resources
+2021-02-16 11:26:03,656 [Worker-52: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 11:26:03,656 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/test/resources
+2021-02-16 12:07:02,775 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-02-16 12:12:39,415 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2021-02-16 12:12:44,678 [Worker-37: Launching access-controller] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/dev/Documents/Github/fizzbuzz/access-controller
+2021-02-16 12:12:44,683 [Worker-37: Launching access-controller] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B package
+2021-02-16 13:09:23,405 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:09:23,407 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-components/src/main/resources
+2021-02-16 13:09:23,408 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:09:23,409 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-components/src/test/resources
+2021-02-16 13:09:23,568 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:09:23,569 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/main/resources
+2021-02-16 13:09:23,570 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:09:23,570 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/test/resources
+2021-02-16 13:09:23,712 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-16 13:09:23,712 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/main/resources
+2021-02-16 13:09:23,713 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-16 13:09:23,713 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/test/resources
+2021-02-16 13:09:32,734 [Worker-52: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:09:32,735 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/main/resources
+2021-02-16 13:09:32,735 [Worker-52: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:09:32,736 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/test/resources
+2021-02-16 13:11:03,871 [Worker-52: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:11:03,872 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/main/resources
+2021-02-16 13:11:03,873 [Worker-52: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:11:03,873 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/test/resources
+2021-02-16 13:12:05,744 [Worker-53: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:12:05,745 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/main/resources
+2021-02-16 13:12:05,746 [Worker-53: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:12:05,747 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/test/resources
+2021-02-16 13:30:59,142 [Worker-57: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:30:59,144 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/main/resources
+2021-02-16 13:30:59,145 [Worker-57: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:30:59,145 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/test/resources
+2021-02-16 13:37:35,819 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2021-02-16 13:37:39,120 [Worker-60: Launching access-controller (1)] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/dev/Documents/Github/fizzbuzz/access-controller
+2021-02-16 13:37:39,120 [Worker-60: Launching access-controller (1)] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B package
+2021-02-16 13:38:51,361 [Worker-61: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:38:51,362 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/main/resources
+2021-02-16 13:38:51,364 [Worker-61: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:38:51,364 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/test/resources
+2021-02-16 13:39:04,511 [Worker-56: Launching access-controller] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/dev/Documents/Github/fizzbuzz/access-controller
+2021-02-16 13:39:04,511 [Worker-56: Launching access-controller] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B package
+2021-02-16 13:43:35,627 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:43:35,628 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/main/resources
+2021-02-16 13:43:35,629 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:43:35,629 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/test/resources
+2021-02-16 13:43:47,377 [Worker-60: Launching access-controller] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/dev/Documents/Github/fizzbuzz/access-controller
+2021-02-16 13:43:47,377 [Worker-60: Launching access-controller] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B package
+2021-02-16 13:43:56,080 [Worker-60: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:43:56,081 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/main/resources
+2021-02-16 13:43:56,081 [Worker-60: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:43:56,082 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/test/resources
+2021-02-16 13:45:04,259 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:45:04,260 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/main/resources
+2021-02-16 13:45:04,261 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:45:04,261 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/test/resources
+2021-02-16 13:45:38,301 [Worker-65: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:45:38,302 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/main/resources
+2021-02-16 13:45:38,303 [Worker-65: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:45:38,303 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/test/resources
+2021-02-16 13:45:45,126 [Worker-63: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:45:45,127 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/main/resources
+2021-02-16 13:45:45,127 [Worker-63: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-16 13:45:45,128 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-endpoints/src/test/resources

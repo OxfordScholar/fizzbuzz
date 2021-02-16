@@ -1,8 +1,5 @@
 package oxfordscholar.services.accesscontroller.app;
 
-import java.lang.System.Logger;
-import java.lang.System.Logger.Level;
-
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
@@ -12,7 +9,7 @@ public class Main {
 
 	public static void main(String[] args) 
 	{
-		int port = 9090;
+		int port = 9092;
 		
 		ServletContextHandler context = new ServletContextHandler(ServletContextHandler.NO_SESSIONS);
 
@@ -32,12 +29,14 @@ public class Main {
 		{
 			server.start();
 			server.join();
+			System.out.println("HERE");
 		} 
 		
 		catch(Exception ex)
 		{
 //			System.getLogger(Main.class.getName()).log(Level.ERROR, null, ex);
-			System.out.println("Error");
+//			System.out.println(ex);
+			ex.printStackTrace();
 		}
 		
 		finally
