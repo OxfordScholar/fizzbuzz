@@ -55,6 +55,15 @@
   	</dependencies>
   </dependencyManagement>
   
+<!--   <build>
+  	<pluginManagement>
+	
+  	</pluginManagement>
+  
+  </build> -->
+  
+
+  
   <modules>
   	<module>access-controller-endpoints</module>
   	<module>access-controller-components</module>

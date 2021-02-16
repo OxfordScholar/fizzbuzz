@@ -36,6 +36,74 @@
       	</dependency>
   	
   	</dependencies>
-  
+  	
+	
+	  
+  	<build>
+		<plugins>
+		<plugin>
+		        <groupId>org.apache.maven.plugins</groupId>
+		        <artifactId>maven-dependency-plugin</artifactId>
+		        <executions>
+		          <execution>
+		            <id>copy-dependencies</id>
+		            <phase>prinvalid epare-package</phase>
+		            <goals>
+		              <goal>copy-dependencies</goal>
+		            </goals>
+		            <configuration>
+		              <outputDirectory>${project.build.directory}/lib</outputDirectory>
+		            </configuration>
+		          </execution>
+		        </executions>
+		      </plugin>
+		<plugin>
+		        <groupId>org.eclipse.jkube</groupId>
+		        <artifactId>kubernetes-maven-plugin</artifactId>
+		        <version>1.1.0</version>
+		        <configuration>
+		               <images>
+                        <image>
+                                <name>${project.artifactId}:${project.version}</name>
+                                <build>
+                                        <from>openjdk:latest</from>
+                                             <assembly>
+							                  <targetDir>/</targetDir>
+							                  <inline>
+							                    <fileSets>
+							                      <fileSet>
+							                        <directory>${project.build.directory}/lib</directory>
+							                        <outputDirectory>usr/local/${project.parent.name}/lib</outputDirectory>
+							                      </fileSet>
+							                    </fileSets>
+							                    <files>
+							                         <file>
+							                              <source>${project.build.directory}/ ${project.artifactId}:${project.version} .jar</source>
+							                                <outputDirectory>usr/local/${project.parent.name}/lib</outputDirectory>
+							                         </file>
+							                    </files>
+							                  </inline>
+                                              </assembly>
+							                <env>
+							                  <JAVA_LIB_DIR>/usr/local/${project.parent.name}/lib</JAVA_LIB_DIR>
+							                   <JAVA_APP_DIR>/usr/local/${project.parent.name}/lib</JAVA_APP_DIR> 
+							                  <JAVA_MAIN_CLASS>oxfordscholar.services.accesscontroller.app.Main</JAVA_MAIN_CLASS>
+							                </env>
+                                        <ports><port>9092</port></ports>	
+                                        
+                                        <pluginGroups>
+								        	<pluginGroup>org.eclipse.jkube</pluginGroup>
+								      	</pluginGroups>
+                                        
+                                        <!-- <cmd><shell>java -jar /usr/local/${projct.artifactId}-${project.version}.jar</shell></cmd>   -->	  
+                                        <entryPoint><exec>java</exec><exec>-jar</exec><exec>/usr/local/${projct.artifactId}-${project.version}.jar</exec></entryPoint>                                      
+                                </build>		
+                        </image>
+		               </images>
+		        </configuration>  
+		</plugin>
+		</plugins>
+</build>
+  	
   
 </project>
