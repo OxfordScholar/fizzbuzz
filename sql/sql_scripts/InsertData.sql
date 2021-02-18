@@ -1,5 +1,5 @@
-INSERT INTO Type (typeName) VALUES ('Admin');
-INSERT INTO Type (typeName) VALUES ('Analyst');
+INSERT INTO Type (typeName) VALUES ('admin');
+INSERT INTO Type (typeName) VALUES ('analyst');
 
 INSERT INTO User (userName) VALUES ('Bob');
 INSERT INTO User (userName) VALUES ('Helen');
