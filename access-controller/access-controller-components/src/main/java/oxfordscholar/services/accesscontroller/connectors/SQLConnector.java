@@ -1,7 +1,12 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.util.List;
+package oxfordscholar.services.accesscontroller.connectors;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
+import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.Statement;
 
 public class SQLConnector {
@@ -10,7 +15,7 @@ public class SQLConnector {
 	
 	public List<String> getGroupsForUser(String User)
 	{
-		List<String> groups = new List<String>;
+		List<String> groups = new ArrayList<String>();
 		
 		try(Connection con = DriverManager.getConnection(sqlUrl))
 		{
