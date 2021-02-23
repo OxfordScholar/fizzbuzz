@@ -1474,3 +1474,112 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Unrecognise
 2021-02-22 13:13:29,739 [Worker-470: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-components/src/main/resources
 2021-02-22 13:13:29,740 [Worker-470: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2021-02-22 13:13:29,740 [Worker-470: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-components/src/test/resources
+2021-02-22 14:41:51,274 [Worker-481: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-22 14:41:51,274 [Worker-481: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-components/src/main/resources
+2021-02-22 14:41:51,275 [Worker-481: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-22 14:41:51,275 [Worker-481: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-components/src/test/resources
+2021-02-22 14:41:52,338 [Worker-483: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-22 14:41:52,339 [Worker-483: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-components/src/main/resources
+2021-02-22 14:41:52,339 [Worker-483: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-22 14:41:52,340 [Worker-483: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/access-controller/access-controller-components/src/test/resources
+2021-02-23 11:50:58,911 [Worker-617: Launching Executing clean in _Users_dev_Documents_Github_fizzbuzz_restV2_restV2] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/dev/Documents/Github/fizzbuzz/restV2/restV2
+2021-02-23 11:50:58,916 [Worker-617: Launching Executing clean in _Users_dev_Documents_Github_fizzbuzz_restV2_restV2] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
+2021-02-23 11:51:00,764 [Worker-619: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 11:51:00,764 [Worker-619: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/main/resources
+2021-02-23 11:51:00,764 [Worker-619: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 11:51:00,764 [Worker-619: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/test/resources
+2021-02-23 11:51:00,766 [Worker-619: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of restV2
+2021-02-23 11:51:00,769 [Worker-619: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for restV2
+2021-02-23 11:51:00,794 [Worker-619: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 11:51:06,623 [Worker-621: Launching Executing install in _Users_dev_Documents_Github_fizzbuzz_restV2_restV2] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/dev/Documents/Github/fizzbuzz/restV2/restV2
+2021-02-23 11:51:06,623 [Worker-621: Launching Executing install in _Users_dev_Documents_Github_fizzbuzz_restV2_restV2] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2021-02-23 11:51:09,276 [Worker-619: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 11:51:09,276 [Worker-619: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/main/resources
+2021-02-23 11:51:09,277 [Worker-619: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 11:51:09,277 [Worker-619: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/test/resources
+2021-02-23 11:52:12,122 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2021-02-23 11:52:15,572 [Worker-619: Launching restV2] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/dev/Documents/Github/fizzbuzz/restV2/restV2
+2021-02-23 11:52:15,573 [Worker-619: Launching restV2] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B package
+2021-02-23 11:53:01,850 [Worker-619: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 11:53:01,851 [Worker-619: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/main/resources
+2021-02-23 11:53:01,851 [Worker-619: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 11:53:01,852 [Worker-619: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/test/resources
+2021-02-23 11:53:02,859 [Worker-620: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 11:53:02,859 [Worker-620: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/main/resources
+2021-02-23 11:53:02,859 [Worker-620: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 11:53:02,859 [Worker-620: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/test/resources
+2021-02-23 11:53:21,627 [Worker-617: Launching Executing install in _Users_dev_Documents_Github_fizzbuzz_restV2_restV2] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/dev/Documents/Github/fizzbuzz/restV2/restV2
+2021-02-23 11:53:21,628 [Worker-617: Launching Executing install in _Users_dev_Documents_Github_fizzbuzz_restV2_restV2] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2021-02-23 11:53:24,193 [Worker-620: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 11:53:24,193 [Worker-620: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/main/resources
+2021-02-23 11:53:24,194 [Worker-620: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 11:53:24,194 [Worker-620: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/test/resources
+2021-02-23 11:53:30,497 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2021-02-23 11:53:34,497 [Worker-617: Launching restV2 (1)] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/dev/Documents/Github/fizzbuzz/restV2/restV2
+2021-02-23 11:53:34,498 [Worker-617: Launching restV2 (1)] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B package
+2021-02-23 13:42:18,154 [Worker-642: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 13:42:18,154 [Worker-642: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/main/resources
+2021-02-23 13:42:18,155 [Worker-642: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 13:42:18,155 [Worker-642: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/test/resources
+2021-02-23 13:51:43,331 [Worker-649: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 13:51:43,332 [Worker-649: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/main/resources
+2021-02-23 13:51:43,332 [Worker-649: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 13:51:43,332 [Worker-649: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/test/resources
+2021-02-23 13:59:18,486 [Worker-654: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 13:59:18,486 [Worker-654: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/main/resources
+2021-02-23 13:59:18,487 [Worker-654: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 13:59:18,487 [Worker-654: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/test/resources
+2021-02-23 13:59:30,742 [Worker-650: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 13:59:30,742 [Worker-650: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/main/resources
+2021-02-23 13:59:30,742 [Worker-650: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 13:59:30,742 [Worker-650: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/test/resources
+2021-02-23 14:03:49,894 [Worker-656: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 14:03:49,894 [Worker-656: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/main/resources
+2021-02-23 14:03:49,895 [Worker-656: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 14:03:49,895 [Worker-656: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/test/resources
+2021-02-23 14:18:13,527 [Worker-661: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2021-02-23 14:18:13,696 [Worker-661: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:simple-service-webapp:1.0-SNAPSHOT @ /Users/dev/Documents/Github/fizzbuzz/rest1/simple-service-webapp/pom.xml.
+2021-02-23 14:18:13,949 [Worker-661: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /simple-service-webapp/src/main/java
+2021-02-23 14:18:13,949 [Worker-661: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /simple-service-webapp/src/main/resources
+2021-02-23 14:18:13,952 [Worker-661: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /simple-service-webapp/src/test/java
+2021-02-23 14:18:14,307 [Worker-661: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2021-02-23 14:18:14,463 [Worker-663: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 14:18:14,467 [Worker-663: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-02-23 14:18:14,467 [Worker-663: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 14:18:14,467 [Worker-663: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/rest1/simple-service-webapp/src/test/resources
+2021-02-23 14:18:15,484 [Worker-662: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 14:18:15,484 [Worker-662: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/main/resources
+2021-02-23 14:18:15,484 [Worker-662: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 14:18:15,484 [Worker-662: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/test/resources
+2021-02-23 14:18:15,494 [Worker-662: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 14:18:15,500 [Worker-662: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-02-23 14:18:15,502 [Worker-662: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 14:18:15,502 [Worker-662: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/rest1/simple-service-webapp/src/test/resources
+2021-02-23 14:20:58,206 [Worker-652: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 14:20:58,207 [Worker-652: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-02-23 14:20:58,207 [Worker-652: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 14:20:58,207 [Worker-652: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/rest1/simple-service-webapp/src/test/resources
+2021-02-23 15:14:23,260 [Worker-675: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 15:14:23,261 [Worker-675: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/main/resources
+2021-02-23 15:14:23,261 [Worker-675: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 15:14:23,261 [Worker-675: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/test/resources
+2021-02-23 15:19:24,205 [Worker-673: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 15:19:24,208 [Worker-673: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-02-23 15:19:24,208 [Worker-673: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 15:19:24,208 [Worker-673: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/rest1/simple-service-webapp/src/test/resources
+2021-02-23 15:20:27,336 [Worker-675: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 15:20:27,337 [Worker-675: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/main/resources
+2021-02-23 15:20:27,337 [Worker-675: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 15:20:27,337 [Worker-675: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/test/resources
+2021-02-23 15:20:28,347 [Worker-678: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 15:20:28,347 [Worker-678: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/main/resources
+2021-02-23 15:20:28,347 [Worker-678: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 15:20:28,347 [Worker-678: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/test/resources
+2021-02-23 15:24:24,443 [Worker-683: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 15:24:24,444 [Worker-683: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/rest1/simple-service-webapp/src/main/resources
+2021-02-23 15:24:24,444 [Worker-683: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 15:24:24,444 [Worker-683: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/rest1/simple-service-webapp/src/test/resources
+2021-02-23 15:24:25,448 [Worker-675: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 15:24:25,448 [Worker-675: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/rest1/simple-service-webapp/src/main/resources
+2021-02-23 15:24:25,448 [Worker-675: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 15:24:25,448 [Worker-675: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/rest1/simple-service-webapp/src/test/resources

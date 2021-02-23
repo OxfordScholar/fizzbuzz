@@ -12,7 +12,7 @@ import java.util.HashMap;
 /**
  * Root resource
  */
-@Path("/users/{DN}")
+@Path("/users/{dn}")
 public class ApiResource {
 
     /**
@@ -24,7 +24,7 @@ public class ApiResource {
      */
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public String getUser(@PathParam("DN") String DN) {
+    public String getUser(@PathParam("DN") String dn) {
     	
     		// Generating dummy data
 //    		HashMap<String, String> dn = new HashMap<String, String>();

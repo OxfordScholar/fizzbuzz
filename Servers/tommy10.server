@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/tommy10-config" deployDir="wtpwebapps" hostname="localhost" id="tommy10" name="tommy10" runtime-id="Apache Tomcat v10.0" server-type="org.eclipse.jst.server.tomcat.100" server-type-id="org.eclipse.jst.server.tomcat.100" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="1"/>
+<server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/tommy10-config" deployDir="wtpwebapps" hostname="localhost" id="tommy10" name="tommy10" runtime-id="Apache Tomcat v10.0" server-type="org.eclipse.jst.server.tomcat.100" server-type-id="org.eclipse.jst.server.tomcat.100" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="2">
+  <list key="modules" value0="restV2::org.eclipse.jst.jee.server:restV2::jst.web::3.1"/>
+</server>

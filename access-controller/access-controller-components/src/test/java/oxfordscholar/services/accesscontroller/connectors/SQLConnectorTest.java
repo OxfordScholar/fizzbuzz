@@ -7,8 +7,10 @@ import org.junit.Test;
 public class SQLConnectorTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void test() 
+	{
+		SQLConnector connector = new SQLConnector();
+		
 	}
 
 }
