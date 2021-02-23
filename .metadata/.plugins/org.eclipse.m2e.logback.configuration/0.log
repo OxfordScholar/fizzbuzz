@@ -1583,3 +1583,24 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Unrecognise
 2021-02-23 15:24:25,448 [Worker-675: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/rest1/simple-service-webapp/src/main/resources
 2021-02-23 15:24:25,448 [Worker-675: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-02-23 15:24:25,448 [Worker-675: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/rest1/simple-service-webapp/src/test/resources
+2021-02-23 15:40:03,433 [Worker-692: Launching Executing clean in _Users_dev_Documents_Github_fizzbuzz_restV2_restV2] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/dev/Documents/Github/fizzbuzz/restV2/restV2
+2021-02-23 15:40:03,434 [Worker-692: Launching Executing clean in _Users_dev_Documents_Github_fizzbuzz_restV2_restV2] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
+2021-02-23 15:40:05,136 [Worker-688: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 15:40:05,137 [Worker-688: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/main/resources
+2021-02-23 15:40:05,137 [Worker-688: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 15:40:05,137 [Worker-688: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/test/resources
+2021-02-23 15:40:05,137 [Worker-688: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of restV2
+2021-02-23 15:40:05,137 [Worker-688: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for restV2
+2021-02-23 15:40:05,143 [Worker-688: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 15:40:14,339 [Worker-693: Launching Executing install in _Users_dev_Documents_Github_fizzbuzz_restV2_restV2] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/dev/Documents/Github/fizzbuzz/restV2/restV2
+2021-02-23 15:40:14,339 [Worker-693: Launching Executing install in _Users_dev_Documents_Github_fizzbuzz_restV2_restV2] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2021-02-23 15:40:16,579 [Worker-690: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 15:40:16,580 [Worker-690: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/main/resources
+2021-02-23 15:40:16,580 [Worker-690: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 15:40:16,580 [Worker-690: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/test/resources
+2021-02-23 15:40:28,123 [Worker-688: Launching restV2] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/dev/Documents/Github/fizzbuzz/restV2/restV2
+2021-02-23 15:40:28,123 [Worker-688: Launching restV2] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B package
+2021-02-23 15:54:15,976 [Worker-695: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 15:54:15,977 [Worker-695: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/main/resources
+2021-02-23 15:54:15,978 [Worker-695: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 15:54:15,978 [Worker-695: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/dev/Documents/Github/fizzbuzz/restV2/restV2/src/test/resources
