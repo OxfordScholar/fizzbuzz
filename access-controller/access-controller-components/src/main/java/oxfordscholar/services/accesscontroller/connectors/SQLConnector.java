@@ -1,31 +1,36 @@
 package oxfordscholar.services.accesscontroller.connectors;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-import com.mysql.jdbc.Connection;
-import com.mysql.jdbc.Statement;
 
 public class SQLConnector {
 
-	private String sqlUrl = "localhost:8090";
+	private String sqlUrl = "jdbc:mysql://localhost:8090/data";
 	
-	public List<String> getGroupsForUser(String User)
+	public List<String> getTypesForUser(String User)
 	{
-		List<String> groups = new ArrayList<String>();
+		List<String> types = new ArrayList<String>();
 		
-		try(Connection con = DriverManager.getConnection(sqlUrl))
+		try(Connection con = DriverManager.getConnection(sqlUrl, "root", "IckyDitto9"))
 		{
 			Statement s = con.createStatement();
 			String query = "Select * from Type;";
-			Results res = s.executeQuery(query);
+			ResultSet res = s.executeQuery(query);
 			
 			while (res.next())
 			{
-				groups.add(res.getString("admin"));
+				types.add(res.getString("admin"));
 			}
 		}
 		
@@ -38,12 +43,12 @@ public class SQLConnector {
 		// Success case - Close resultset, statement and connection
 		finally
 		{
-			s.close();
-			res.close();
-			con.close();
+//			s.close();
+//			res.close();
+//			con.close();
 		}
 		
-		return groups;
+		return types;
 	}
 	
 }
