@@ -17,7 +17,9 @@ public class SQLConnectorTest {
 		
 		List<String> result = connector.getTypesForUser("Bob");
 		
-		assert result.get(0) == "admin" : "The output was wrong"; // Assertion for correct output
+		System.out.println(result.get(0));
+		
+		assert result.get(0).strip().equals("admin") : "The output was wrong"; // Assertion for correct output
 	}
 
 }

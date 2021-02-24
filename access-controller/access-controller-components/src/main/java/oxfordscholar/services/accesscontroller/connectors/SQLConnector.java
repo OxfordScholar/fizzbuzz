@@ -17,20 +17,22 @@ import java.util.ListIterator;
 public class SQLConnector {
 
 	private String sqlUrl = "jdbc:mysql://localhost:8090/data";
+	private String username = "root";
+	private String password = "IckyDitto9";
 	
 	public List<String> getTypesForUser(String User)
 	{
 		List<String> types = new ArrayList<String>();
 		
-		try(Connection con = DriverManager.getConnection(sqlUrl, "root", "IckyDitto9"))
+		try(Connection con = DriverManager.getConnection(sqlUrl, username, password))
 		{
 			Statement s = con.createStatement();
-			String query = "Select * from Type;";
+			String query = String.format("SELECT Type.typeName FROM User JOIN User_types ON User.userId=User_types.userId JOIN Type on Type.typeId=User_types.typeId WHERE User.userName=\"%s\";", User);
 			ResultSet res = s.executeQuery(query);
 			
 			while (res.next())
 			{
-				types.add(res.getString("admin"));
+				types.add(res.getString("typeName"));
 			}
 		}
 		

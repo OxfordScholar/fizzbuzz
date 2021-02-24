@@ -1,3 +1,9 @@
+CREATE TABLE Application (
+	appId			INT				NOT NULL AUTO_INCREMENT,
+	appName			VARCHAR(100)	NOT NULL,
+	PRIMARY KEY (appId)
+);
+
 CREATE TABLE Type (
 	typeId			INT 			NOT NULL AUTO_INCREMENT,
 	typeName		VARCHAR(100)	NOT NULL,
@@ -18,10 +24,4 @@ CREATE TABLE User_types (
 	PRIMARY KEY (userId, typeId),
 	FOREIGN KEY (userId) REFERENCES User(userId),
 	FOREIGN KEY (typeId) REFERENCES Type(typeId)
-);
-
-CREATE TABLE Application (
-	appId			INT				NOT NULL AUTO_INCREMENT,
-	appName			INT				NOT NULL,
-	PRIMARY KEY (appId)
 );
