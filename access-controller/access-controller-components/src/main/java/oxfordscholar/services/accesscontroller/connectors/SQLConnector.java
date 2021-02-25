@@ -2,6 +2,7 @@ package oxfordscholar.services.accesscontroller.connectors;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -26,9 +27,13 @@ public class SQLConnector {
 		
 		try(Connection con = DriverManager.getConnection(sqlUrl, username, password))
 		{
-			Statement s = con.createStatement();
-			String query = String.format("SELECT Type.typeName FROM User JOIN User_types ON User.userId=User_types.userId JOIN Type on Type.typeId=User_types.typeId WHERE User.userName=\"%s\";", User);
-			ResultSet res = s.executeQuery(query);
+			String query = "SELECT Type.typeName FROM User JOIN User_types ON User.userId=User_types.userId JOIN Type on Type.typeId=User_types.typeId WHERE User.userName= ?";
+			PreparedStatement s = con.prepareStatement(query);
+			s.setString(1, User);
+			
+			ResultSet res = s.executeQuery();
+			
+			
 			
 			while (res.next())
 			{
