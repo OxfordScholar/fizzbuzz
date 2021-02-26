@@ -17,5 +17,4 @@ public class AuthorisationApplication implements IAuthorisationService{
 		return authService.getUserInfo(dn);
 	}
 
-
 }

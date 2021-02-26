@@ -50,12 +50,14 @@ public class SQLConnector {
 		// Success case - Close resultset, statement and connection
 		finally
 		{
-//			s.close();
-//			res.close();
-//			con.close();
+			// Not sure why this is throwing an error
+			s.close();
+			res.close();
+			con.close();
 		}
 		
 		return types;
 	}
+	
 	
 }
