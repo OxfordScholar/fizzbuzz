@@ -6,7 +6,7 @@ import jakarta.ws.rs.ApplicationPath;
 import oxfordscholar.services.accesscontroller.authorisation.AuthorisationServiceFactory;
 import oxfordscholar.services.accesscontroller.authorisation.service.AuthorisationApplication;
 
-@ApplicationPath("rest/v3")
+@ApplicationPath("/")
 public class AppConfig extends ResourceConfig
 {
 	
