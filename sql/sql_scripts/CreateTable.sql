@@ -4,11 +4,11 @@ CREATE TABLE Application (
 	PRIMARY KEY (appId)
 );
 
-CREATE TABLE Type (
-	typeId			INT 			NOT NULL AUTO_INCREMENT,
-	typeName		VARCHAR(100)	NOT NULL,
+CREATE TABLE Role (
+	roleId			INT 			NOT NULL AUTO_INCREMENT,
+	roleName		VARCHAR(100)	NOT NULL,
 	appId			INT				NOT NULL,
-	PRIMARY KEY (typeID),
+	PRIMARY KEY (roleID),
 	FOREIGN KEY (appId) REFERENCES Application(appId)
 );
 
@@ -20,8 +20,8 @@ CREATE TABLE User (
 
 CREATE TABLE User_types (
 	userId 			INT 			NOT NULL,
-	typeId 			INT  			NOT NULL,
-	PRIMARY KEY (userId, typeId),
+	roleId 			INT  			NOT NULL,
+	PRIMARY KEY (userId, roleId),
 	FOREIGN KEY (userId) REFERENCES User(userId),
-	FOREIGN KEY (typeId) REFERENCES Type(typeId)
+	FOREIGN KEY (roleId) REFERENCES Role(roleId)
 );
