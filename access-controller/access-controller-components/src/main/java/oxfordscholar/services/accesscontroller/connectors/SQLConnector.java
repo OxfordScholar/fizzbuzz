@@ -21,43 +21,92 @@ public class SQLConnector {
 	private String username = "root";
 	private String password = "IckyDitto9";
 	
-	public List<String> getTypesForUser(String User)
+	/**
+	 * Obtains all Roles associated with User.
+	 * 
+	 * @param User
+	 * @return List<String> containing Roles associated with User
+	 */
+	public List<String> getRolesForUser(String user)
 	{
-		List<String> types = new ArrayList<String>();
+		List<String> roles = new ArrayList<String>();
 		
 		try(Connection con = DriverManager.getConnection(sqlUrl, username, password))
 		{
-			String query = "SELECT Type.typeName FROM User JOIN User_types ON User.userId=User_types.userId JOIN Type on Type.typeId=User_types.typeId WHERE User.userName= ?";
+			String query = "SELECT Role.roleName FROM User JOIN User_roles ON User.userId=User_roles.userId JOIN Role on Role.roleId=User_roles.roleId WHERE User.userName= ?";
 			PreparedStatement s = con.prepareStatement(query);
-			s.setString(1, User);
+			s.setString(1, user);
 			
 			ResultSet res = s.executeQuery();
 			
-			
-			
 			while (res.next())
 			{
-				types.add(res.getString("typeName"));
+				roles.add(res.getString("roleName"));
 			}
 		}
 		
 		// Error case - Cannot make connection to SQL server
 		catch (SQLException err)
 		{
-			throw new IllegalStateException("Unable to connect to database", err);
+			throw new IllegalStateException("An error occured with the DB", err);
 		}
 		
 		// Success case - Close resultset, statement and connection
 		finally
 		{
 			// Not sure why this is throwing an error
-			s.close();
-			res.close();
-			con.close();
+//			s.close();
+//			res.close();
+//			con.close();
 		}
 		
-		return types;
+		return roles;
 	}
 	
+	
+	/**
+	 * Obtains all Roles associated with User from given Application
+	 * 
+	 * @param user Name of user.
+	 * @param appId Id of Application
+	 * @return List<String> of Roles that User holds in Application
+	 */
+	public List<String> getRolesByUserInApp(String user, String appId)
+	{
+		List<String> roles = new ArrayList<String>();
+		
+		try(Connection con = DriverManager.getConnection(sqlUrl, username, password))
+		{
+			String query = "SELECT Role.roleName FROM Role JOIN User_roles ON Role.roleId=User_roles.roleId JOIN User ON User.userId=User_roles.userId WHERE User.userName=? AND Role.appId=?";
+			
+			PreparedStatement s = con.prepareStatement(query);
+			s.setString(1, user);
+			s.setString(2, appId);
+			
+			ResultSet res = s.executeQuery();
+			
+			
+			while (res.next())
+			{
+				roles.add(res.getString("roleName"));
+			}
+		}
+		
+		catch(SQLException err)
+		{
+			throw new IllegalStateException("An error occured with the DB", err);
+		}
+		
+		// Success case - Close resultset, statement and connection
+		finally
+		{
+			// Not sure why this is throwing an error
+//			s.close();
+//			res.close();
+//			con.close();
+		}
+		
+		return roles;
+	}
 	
 }

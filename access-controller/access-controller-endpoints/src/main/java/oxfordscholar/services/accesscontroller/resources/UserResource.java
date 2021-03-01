@@ -2,6 +2,8 @@ package oxfordscholar.services.accesscontroller.resources;
 
 import oxfordscholar.services.accesscontroller.connectors.*;
 
+import java.util.List;
+
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
@@ -40,11 +42,9 @@ public class UserResource {
 	public String getUserGroupsByProject(String dn, String projectId)
 	{	
 		
-		String userDetails = authApp.getUserInfo(dn);
-		
 		SQLConnector connector = new SQLConnector();
 		
-		List<String> allTypes = connector.getTypesForUser()
+		List<String> allTypes = connector.getTypesByUserInApp(dn, 1);
 		
 		
 		return "todo";

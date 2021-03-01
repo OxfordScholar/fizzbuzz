@@ -1,12 +1,12 @@
 -- Insert dummy data into Application
-INSERT INTO Application(appName) VALUES ("App1");
-INSERT INTO Application(appName) VALUES ("App2");
-INSERT INTO Application(appName) VALUES ("App3");
-INSERT INTO Application(appName) VALUES ("App4");
+INSERT INTO Application(appId, appName) VALUES ('111111111111111111111111111111111111', "App1");
+INSERT INTO Application(appId, appName) VALUES ('222222222222222222222222222222222222', "App2");
+INSERT INTO Application(appId, appName) VALUES ('333333333333333333333333333333333333', "App3");
+INSERT INTO Application(appId, appName) VALUES ('444444444444444444444444444444444444', "App4");
 
 --  Dummy data into Role
-INSERT INTO Role (roleName, appId) VALUES ('admin', 1);
-INSERT INTO Role (roleName, appId) VALUES ('analyst', 4);
+INSERT INTO Role (roleName, appId) VALUES ('admin', "111111111111111111111111111111111111");
+INSERT INTO Role (roleName, appId) VALUES ('analyst', "444444444444444444444444444444444444");
 
 -- Dummy data into User
 INSERT INTO User (userName) VALUES ('Bob'); -- User ID 1
