@@ -2,7 +2,11 @@ package oxfordscholar.services.accesscontroller.resources;
 
 import oxfordscholar.services.accesscontroller.connectors.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
+import com.google.gson.*;
 
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
@@ -17,46 +21,77 @@ import oxfordscholar.services.accesscontroller.authorisation.service.Authorisati
  *
  */
 @Path("/users")
-public class UserResource {
+public class UserResource 
+{
 
 	@Inject
 	AuthorisationApplication authApp;
 	
 	/**
+	 * Returns user profile
 	 * 
 	 * @param dn Distinguished Name
-	 * @return
+	 * @return JSON of User profile
 	 */
-	@Path("/{dn}")
 	@GET
+	@Path("/{dn}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public String getUserProfile(@PathParam("dn") String dn)
 	{
+		// Needs to talk to Rest1
+		
 		return authApp.getUserInfo(dn);
 	}
 	
-	// Returns all groups that user is part of by project ID
+	/**
+	 * Obtains all Roles held by User for specific Application
+	 * 
+	 * @param dn Distinguished Name
+	 * @param appId Application Id
+	 * @return JSON containing all Roles for User in particular Application
+	 */
 	@GET
-	@Path("/groups/{applicationId}")
+	@Path("/{dn}/groups/{applicationId}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public String getUserGroupsByProject(String dn, String projectId)
+	public String getUserRolesByApplication(String dn, String appId)
 	{	
 		
 		SQLConnector connector = new SQLConnector();
 		
-		List<String> allTypes = connector.getTypesByUserInApp(dn, 1);
+		List<String> roles = connector.getRolesByUserInApp(dn, appId);
+		Map<String, List<String>> response = new HashMap() {{
+			put("roles", roles);
+			
+		}};
 		
-		
-		return "todo";
+		// Format results into JSON and return
+		String json = new Gson().toJson(response);
+		return json;
 	}
 	
-	// Returns all roles user has
+	/**
+	 * Obtains all roles held by User
+	 * 
+	 * @param dn Distinguished Name
+	 * @return JSON containing all Roles for User
+	 */
 	@GET
-	@Path("/roles")
+	@Path("/{dn}/roles")
 	@Produces(MediaType.APPLICATION_JSON)
 	public String userRoles(String dn)
 	{
-		return "todo";
+		SQLConnector connector = new SQLConnector();
+		
+		List<String> roles = connector.getRolesForUser(dn);
+		Map<String, List<String>> response = new HashMap() {{
+			put("roles", roles);
+			
+		}};
+		
+		//Format results into JSON and return
+		String json = new Gson().toJson(roles);
+		return json;
 	}
+	
 	
 }

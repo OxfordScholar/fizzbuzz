@@ -87,5 +87,57 @@ public class SQLConnectorTest {
 		result = connector.getRolesByUserInApp("Mike", "444444444444444444444444444444444444");
 		assert result.get(0).strip().equals("analyst");
 	}
+	
+	/**
+	 * Testing getRolesByUserInApp() with invalid data
+	 */
+	@Test
+	public void testGetRolesForUserInAppInvalid()
+	{
+		SQLConnector connector = new SQLConnector();
+		
+		assert connector != null : "Connector was null"; // Null check
+		
+		List<String> result = connector.getRolesByUserInApp("Bob", "hello");
+		assert result.isEmpty();
+		
+		result = connector.getRolesByUserInApp("Mike", "test");
+		assert result.isEmpty();
+	}
+	
+	/**
+	 * Testing queryUserRoleInApp() with valid data
+	 */
+	@Test
+	public void testQueryUserRolesInAppValid()
+	{
+		SQLConnector connector = new SQLConnector();
+		
+		assert connector != null : "Connector was null";
+		
+		Boolean result = connector.queryUserRoleInApp("Bob", "111111111111111111111111111111111111", 1);
+		assert result;
+	}
+	
+	/**
+	 * Testing queryUserRoleInApp() with valid data
+	 */
+	@Test
+	public void testQueryUserRolesInAppInvalid()
+	{
+		SQLConnector connector = new SQLConnector();
+		
+		assert connector != null : "Connector was null";
+		
+		Boolean result = connector.queryUserRoleInApp("Bob", "111111111111111111111111111111111111", 2);
+		assert !result;
+		
+		result = connector.queryUserRoleInApp("James", "111111111111111111111111111111111111", 2);
+		assert !result;
+		
+		result = connector.queryUserRoleInApp("Bob", "hello", 3);
+		assert !result;
+		
+	}
 
 }
