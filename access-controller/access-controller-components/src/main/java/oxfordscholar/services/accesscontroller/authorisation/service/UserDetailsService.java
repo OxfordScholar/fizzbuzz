@@ -2,7 +2,7 @@ package oxfordscholar.services.accesscontroller.authorisation.service;
 
 import oxfordscholar.services.accesscontroller.authorisation.IAuthorisationService;
 import oxfordscholar.services.accesscontroller.connectors.SQLConnector;
-import oxfordscholar.services.authentication.RestConnector;
+import oxfordscholar.services.accesscontroller.authentication.RestConnector;
 
 import java.util.ArrayList;
 import java.util.List;
