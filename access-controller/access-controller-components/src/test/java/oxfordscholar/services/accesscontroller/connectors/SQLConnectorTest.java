@@ -1,12 +1,10 @@
 package oxfordscholar.services.accesscontroller.connectors;
 
-import static org.junit.Assert.*;
-
 import java.util.List;
-
 import org.junit.Test;
 
-public class SQLConnectorTest {
+public class SQLConnectorTest 
+{
 
 	/**
 	 * Testing getRolesForUser() function with valid data

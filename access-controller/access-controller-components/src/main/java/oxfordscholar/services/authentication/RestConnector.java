@@ -10,12 +10,21 @@ import java.net.URL;
  * Class responsible for handling connections to rest1 API
  *
  */
-public class RestConnector {
+public class RestConnector 
+{
+
+	String address;
 	
-	public String connectRest(String address)
+	public RestConnector(String address)
+	{
+		this.address = address;
+	}
+	
+	public String connectRest(String dn)
 	{
 		//Setup
 				StringBuilder response = new StringBuilder();
+				this.address = String.format(address, dn); // Build address with user name
 						
 				try
 				{
