@@ -51,7 +51,7 @@
 	
 	  
   	<build>
-  	<finalName>${project.artifactId}:${project.version}</finalName>
+  	<finalName>${project.artifactId}-${project.version}</finalName>
 		<plugins>
 		<plugin>
 		        <groupId>org.apache.maven.plugins</groupId>
@@ -89,7 +89,7 @@
 							                    </fileSets>
 							                    <files>
 							                         <file>
-							                              <source>${project.build.directory}/${project.artifactId}:${project.version}.jar</source>
+							                              <source>${project.build.directory}/${project.artifactId}-${project.version}.jar</source>
 							                                <outputDirectory>usr/local/${project.parent.name}/lib</outputDirectory>
 							                         </file>
 							                    </files>
@@ -104,7 +104,7 @@
                                        
                                         
                                         <!-- <cmd><shell>java -jar /usr/local/${projct.artifactId}-${project.version}.jar</shell></cmd>   -->	  
-                                        <entryPoint><exec>java</exec><exec>-jar</exec><exec>/usr/local/${projct.artifactId}-${project.version}.jar</exec></entryPoint>                                      
+                                        <entryPoint><exec>java</exec><exec>-jar</exec><exec>/usr/local/access-controller/lib/${project.artifactId}-${project.version}.jar</exec></entryPoint>                                      
                                 </build>		
                         </image>
 		               </images>

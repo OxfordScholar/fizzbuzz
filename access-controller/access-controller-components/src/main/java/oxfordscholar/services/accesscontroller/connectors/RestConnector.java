@@ -1,4 +1,4 @@
-package oxfordscholar.services.accesscontroller.authentication;
+package oxfordscholar.services.accesscontroller.connectors;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

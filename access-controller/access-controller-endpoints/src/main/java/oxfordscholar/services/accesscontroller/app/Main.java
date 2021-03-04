@@ -29,7 +29,7 @@ public class Main {
 		{
 			server.start();
 			server.join();
-			System.out.println("HERE");
+			System.out.println("Entered try block");
 		} 
 		
 		catch(Exception ex)

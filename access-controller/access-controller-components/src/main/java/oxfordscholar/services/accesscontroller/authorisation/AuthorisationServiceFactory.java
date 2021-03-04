@@ -16,7 +16,6 @@ public class AuthorisationServiceFactory {
 			authService = new UserDetailsService(url);
 			authApp = new AuthorisationApplication(authService);
 		}
-
 	}
 	
 	public AuthorisationApplication getAuthorisationService()
