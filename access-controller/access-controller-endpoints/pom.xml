@@ -103,8 +103,8 @@
                                         <ports><port>9092</port></ports>	
                                        
                                         
-                                        <!-- <cmd><shell>java -jar /usr/local/${projct.artifactId}-${project.version}.jar</shell></cmd>   -->	  
-                                        <entryPoint><exec>java</exec><exec>-jar</exec><exec>/usr/local/access-controller/lib/${project.artifactId}-${project.version}.jar</exec></entryPoint>                                      
+<!--                                         <cmd><shell>java -jar /usr/local/${projct.artifactId}-${project.version}.jar</shell></cmd>   -->	  
+                                   <entryPoint><exec>/usr/local/access-controller/lib/${project.artifactId}-${project.version}.jar</exec></entryPoint>                                      
                                 </build>		
                         </image>
 		               </images>
