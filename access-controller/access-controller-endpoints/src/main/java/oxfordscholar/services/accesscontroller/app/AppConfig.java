@@ -1,7 +1,9 @@
 package oxfordscholar.services.accesscontroller.app;
 
+
 import org.glassfish.hk2.utilities.binding.AbstractBinder;
 import org.glassfish.jersey.server.ResourceConfig;
+
 import jakarta.ws.rs.ApplicationPath;
 import oxfordscholar.services.accesscontroller.authorisation.AuthorisationServiceFactory;
 import oxfordscholar.services.accesscontroller.authorisation.service.AuthorisationApplication;
@@ -27,7 +29,7 @@ public class AppConfig extends ResourceConfig
 				bind(AuthorisationApplication.class).to(AuthorisationApplication.class);
 			}
 		});
-		packages("oxfordscholar.services.accesscontroller.resources");
+		packages("oxfordscholar.services.accesscontroller");
 	}
 
 }

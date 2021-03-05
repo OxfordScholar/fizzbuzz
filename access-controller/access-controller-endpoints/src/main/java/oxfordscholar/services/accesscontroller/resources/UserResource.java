@@ -53,7 +53,7 @@ public class UserResource
 	@GET
 	@Path("/{dn}/groups/{applicationId}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public String getUserRolesByApplication(String dn, String appId)
+	public String getUserRolesByApplication(@PathParam("dn") String dn, @PathParam("appId") String appId)
 	{	
 		
 		SQLConnector connector = new SQLConnector();
@@ -78,7 +78,7 @@ public class UserResource
 	@GET
 	@Path("/{dn}/roles")
 	@Produces(MediaType.APPLICATION_JSON)
-	public String userRoles(String dn)
+	public String userRoles(@PathParam("dn") String dn)
 	{
 		SQLConnector connector = new SQLConnector();
 		

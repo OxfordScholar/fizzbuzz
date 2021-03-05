@@ -9,7 +9,7 @@ public class Main {
 
 	public static void main(String[] args) 
 	{
-		int port = 9092;
+		int port = 8100;
 		
 		ServletContextHandler context = new ServletContextHandler(ServletContextHandler.NO_SESSIONS);
 
@@ -25,11 +25,13 @@ public class Main {
 		Server server = new Server(port);
 		server.setHandler(context);
 		
+		System.out.println("Hello");
+		
 		try
 		{
+			System.out.println("Entered try block");
 			server.start();
 			server.join();
-			System.out.println("Entered try block");
 		} 
 		
 		catch(Exception ex)

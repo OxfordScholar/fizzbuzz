@@ -17,7 +17,7 @@
       	
       	<dependency>
 	      <groupId>org.glassfish.jersey.containers</groupId>
-	      <artifactId>jersey-container-servlet-core</artifactId>
+	      <artifactId>jersey-container-servlet</artifactId>
       	</dependency>
       	
       	<dependency>
@@ -45,6 +45,17 @@
 	      <groupId>com.google.code.gson</groupId>
 	      <artifactId>gson</artifactId>
 	    </dependency>
+	    
+	    <dependency>
+		    <groupId>org.glassfish.jersey.containers</groupId>
+		    <artifactId>jersey-container-jetty-servlet</artifactId>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.glassfish.jersey.core</groupId>
+		    <artifactId>jersey-server</artifactId>
+		</dependency>
+	    
   	
   	</dependencies>
   	
@@ -101,9 +112,7 @@
 							                  <JAVA_MAIN_CLASS>oxfordscholar.services.accesscontroller.app.Main</JAVA_MAIN_CLASS>
 							                </env>
                                         <ports><port>9092</port></ports>	
-                                       
-                                        
-<!--                                         <cmd><shell>java -jar /usr/local/${projct.artifactId}-${project.version}.jar</shell></cmd>   -->	  
+                                                                               
                                    <entryPoint><exec><args>java</args><args>-jar</args><args>/usr/local/access-controller/lib/${project.artifactId}-${project.version}.jar</args></exec></entryPoint>                                      
                                 </build>		
                         </image>
@@ -119,7 +128,8 @@
 				
 					<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 					<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-					<addClasspath>false</addClasspath>
+					<addClasspath>true</addClasspath>
+					<mainClass>oxfordscholar.services.accesscontroller.app.Main</mainClass>
 				
 				</manifest>
 			</archive>

@@ -2,6 +2,7 @@ package oxfordscholar.services.accesscontroller.resources;
 
 import jakarta.inject.Inject;
 import jakarta.ws.rs.Path;
+import jakarta.ws.rs.PathParam;
 import oxfordscholar.services.accesscontroller.authorisation.service.AuthorisationApplication;
 import oxfordscholar.services.accesscontroller.connectors.SQLConnector;
 
@@ -21,7 +22,7 @@ public class RoleResource
 	 * @return Boolean of whether User holds Role within Application
 	 */
 	@Path("/{applicationId}!{roleId}/members/{dn}")
-	public Boolean doesUserHaveRoleInApp(String appId, int roleId, String dn)
+	public Boolean doesUserHaveRoleInApp(@PathParam("appId") String appId, @PathParam("roleId") int roleId, @PathParam("dn") String dn)
 	{
 		
 		SQLConnector connector = new SQLConnector();

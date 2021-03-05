@@ -27,12 +27,6 @@ public class ApiResource {
     public String getUser(@PathParam("DN") String dn) {
     	
     		// Generating dummy data
-//    		HashMap<String, String> dn = new HashMap<String, String>();
-//    		dn.put("cn", "ipsum lorem(lxipsum)");
-//    		dn.put("firstName", "lorem");
-//    		dn.put("lastName", "ipsum");
-//    		String dnString = JsonHelper.jsonStringParser(dn);
-
     		String dnString = "cn=ipsum lorem(lxipsum), ou=defence, c=au";
     		
     		
