@@ -104,12 +104,28 @@
                                        
                                         
 <!--                                         <cmd><shell>java -jar /usr/local/${projct.artifactId}-${project.version}.jar</shell></cmd>   -->	  
-                                   <entryPoint><exec>/usr/local/access-controller/lib/${project.artifactId}-${project.version}.jar</exec></entryPoint>                                      
+                                   <entryPoint><exec><args>java</args><args>-jar</args><args>/usr/local/access-controller/lib/${project.artifactId}-${project.version}.jar</args></exec></entryPoint>                                      
                                 </build>		
                         </image>
 		               </images>
 		        </configuration>  
 		</plugin>
+		
+		<plugin>
+			<artifactId>maven-jar-plugin</artifactId>
+			<configuration>
+			<archive>
+				<manifest>
+				
+					<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+					<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+					<addClasspath>false</addClasspath>
+				
+				</manifest>
+			</archive>
+			</configuration>
+		</plugin>
+		
 		</plugins>
 </build>
   	
