@@ -19,14 +19,17 @@ public class AppConfig extends ResourceConfig
 		
 		AuthorisationServiceFactory factory = new AuthorisationServiceFactory();
 		
-		factory.buildAuthService("localhost:8090/rest/v3", "userdetails");
+		
+		factory.buildAuthService("http://localhost:1000/restV2/webapi/rest/v3/users/", "userdetails");
 		authApp = factory.getAuthorisationService();
 		
-		register(new AbstractBinder() {
+		register(new AbstractBinder() 
+		{
 			
 			@Override
-			protected void configure() {
-				bind(AuthorisationApplication.class).to(AuthorisationApplication.class);
+			protected void configure() 
+			{
+				bind(authApp).to(AuthorisationApplication.class);
 			}
 		});
 		packages("oxfordscholar.services.accesscontroller");

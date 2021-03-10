@@ -19,4 +19,5 @@
     <fullyQualifiedTypeName name="jakarta.ws.rs.Produces"/>
     <fullyQualifiedTypeName name="jakarta.ws.rs.core.MediaType"/>
     <fullyQualifiedTypeName name="jakarta.ws.rs.GET"/>
+    <fullyQualifiedTypeName name="org.glassfish.jersey.server.ResourceConfig"/>
 </qualifiedTypeNameHistroy>

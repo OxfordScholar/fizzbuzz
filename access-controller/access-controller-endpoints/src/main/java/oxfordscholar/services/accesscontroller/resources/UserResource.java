@@ -15,6 +15,8 @@ import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import oxfordscholar.services.accesscontroller.authorisation.service.AuthorisationApplication;
+import oxfordscholar.services.accesscontroller.authorisation.AuthorisationServiceFactory;
+
 
 /**
  * 
@@ -25,7 +27,13 @@ public class UserResource
 {
 
 	@Inject
-	AuthorisationApplication authApp;
+	private AuthorisationApplication authApp;
+	
+	public UserResource()
+	{
+		
+		//this.authApp = new AuthorisationApplication(authApp);
+	}
 	
 	/**
 	 * Returns user profile
@@ -39,7 +47,6 @@ public class UserResource
 	public String getUserProfile(@PathParam("dn") String dn)
 	{
 		// Needs to talk to Rest1
-		
 		return authApp.getUserInfo(dn);
 	}
 	

@@ -24,7 +24,7 @@ public class RestConnector
 	{
 		//Setup
 				StringBuilder response = new StringBuilder();
-				this.address = String.format(address, dn); // Build address with user name
+				this.address = address + dn; // Build address with user name
 						
 				try
 				{
