@@ -22,7 +22,7 @@ public class RoleResource
 	 * @return Boolean of whether User holds Role within Application
 	 */
 	@Path("/{applicationId}!{roleId}/members/{dn}")
-	public Boolean doesUserHaveRoleInApp(@PathParam("appId") String appId, @PathParam("roleId") int roleId, @PathParam("dn") String dn)
+	public Boolean doesUserHaveRoleInApp(@PathParam("applicationId") String appId, @PathParam("roleId") int roleId, @PathParam("dn") String dn)
 	{
 		
 		SQLConnector connector = new SQLConnector();
@@ -31,6 +31,5 @@ public class RoleResource
 		
 		return hasRole;
 	}
-	
 	
 }

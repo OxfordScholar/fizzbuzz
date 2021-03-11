@@ -48,10 +48,10 @@ public class UserDetailsService implements IAuthorisationService
 		// Convert to JSON
 		JsonParser jsonParser = new JsonParser();
 		JsonObject json = (JsonObject)jsonParser.parse(rest1Response);
-		JsonArray rolesJson = new Gson().toJsonTree(roles).getAsJsonArray();
+//		JsonArray rolesJson = new Gson().toJsonTree(roles).getAsJsonArray();
 		
-		// Merge and return
-		json.add("groups", rolesJson);
+		// To be used if we need to merge groups into the request
+//		json.add("groups", rolesJson);
 		return json.toString();
 		
 	}

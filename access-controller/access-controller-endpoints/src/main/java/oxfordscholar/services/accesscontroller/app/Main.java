@@ -29,11 +29,8 @@ public class Main {
 		
 		try
 		{
-			System.out.println("Entered try block");
 			server.start();
-			System.out.println("Passed server start");
 			server.join();
-			System.out.println("Passed server join");
 		} 
 		
 		catch(Exception ex)

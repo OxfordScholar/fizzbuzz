@@ -29,12 +29,6 @@ public class UserResource
 	@Inject
 	private AuthorisationApplication authApp;
 	
-	public UserResource()
-	{
-		
-		//this.authApp = new AuthorisationApplication(authApp);
-	}
-	
 	/**
 	 * Returns user profile
 	 * 
@@ -60,20 +54,24 @@ public class UserResource
 	@GET
 	@Path("/{dn}/groups/{applicationId}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public String getUserRolesByApplication(@PathParam("dn") String dn, @PathParam("appId") String appId)
+	public String getUserRolesByApplication(@PathParam("dn") String dn, @PathParam("applicationId") String appId)
 	{	
+		
+		String userDetails = getUserProfile(dn);
 		
 		SQLConnector connector = new SQLConnector();
 		
 		List<String> roles = connector.getRolesByUserInApp(dn, appId);
-		Map<String, List<String>> response = new HashMap() {{
-			put("roles", roles);
-			
-		}};
+
 		
-		// Format results into JSON and return
-		String json = new Gson().toJson(response);
-		return json;
+		// JSON conversions
+		JsonParser jsonParser = new JsonParser();
+		JsonArray rolesJson = (JsonArray)jsonParser.parse(new Gson().toJson(roles));
+		JsonObject userJson = (JsonObject)jsonParser.parse(userDetails);
+	
+		userJson.add("roles", rolesJson);
+
+		return userJson.toString();
 	}
 	
 	/**
