@@ -1,0 +1,19 @@
+{
+    "dn": "cn=maxwell (maxy), ou=oxfordscholar, o=fizzbuzz, c=au",
+    "displayName": "MaxwellChu",
+    "firstName": "Maxwell",
+    "lastName": "Chu",
+    "email": "max@chu.com",
+    "access1": [
+        "A1",
+        "A2"
+    ],
+    "access2": [
+        "B1",
+        "B2"
+    ],
+    "access3": [
+        "C1",
+        "C2"
+    ]
+}

@@ -25,7 +25,6 @@ public class Main {
 		Server server = new Server(port);
 		server.setHandler(context);
 		
-		System.out.println("Hello");
 		
 		try
 		{

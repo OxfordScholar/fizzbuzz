@@ -1,0 +1,6 @@
+{
+    "group": [
+        "CN=User, OU=OxfordScholar, O=Fizzbuzz, C=au",
+        "CN=Admin, OU=OxfordScholar, O=Fizzbuzz, C=au"
+    ]
+}
