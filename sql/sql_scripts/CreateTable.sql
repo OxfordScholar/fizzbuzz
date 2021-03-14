@@ -1,28 +1,28 @@
 -- appId is GUID, appName is Unique
-CREATE TABLE Application (
-	appId			VARCHAR(36)			NOT NULL,
-	appName			VARCHAR(100)		NOT NULL UNIQUE,
-	PRIMARY KEY (appId)
+CREATE TABLE ds_application (
+	application_id			VARCHAR(36)			NOT NULL,
+	name			VARCHAR(100)		NOT NULL UNIQUE,
+	PRIMARY KEY (application_id)
 );
 
-CREATE TABLE Role (
-	roleId			INT 			NOT NULL AUTO_INCREMENT,
-	roleName		VARCHAR(100)	NOT NULL,
-	appId			VARCHAR(36)		NOT NULL,
-	PRIMARY KEY (roleID),
-	FOREIGN KEY (appId) REFERENCES Application(appId)
+CREATE TABLE ds_group (
+	group_id			INT 			NOT NULL AUTO_INCREMENT,
+	name		VARCHAR(100)	NOT NULL,
+	application_id			VARCHAR(36)		NOT NULL,
+	PRIMARY KEY (group_id),
+	FOREIGN KEY (application_id) REFERENCES ds_application(application_id)
 );
 
-CREATE TABLE User (
-	userId			INT				NOT NULL AUTO_INCREMENT,
-	userName		VARCHAR(100)	NOT NULL,
-	PRIMARY KEY	(userId)			
+CREATE TABLE ds_user (
+	user_id			INT				NOT NULL AUTO_INCREMENT,
+	name		VARCHAR(255)	NOT NULL UNIQUE,
+	PRIMARY KEY	(user_id)			
 );
 
-CREATE TABLE User_roles (
-	userId 			INT 			NOT NULL,
-	roleId 			INT  			NOT NULL,
-	PRIMARY KEY (userId, roleId),
-	FOREIGN KEY (userId) REFERENCES User(userId),
-	FOREIGN KEY (roleId) REFERENCES Role(roleId)
+CREATE TABLE ds_user_group (
+	user_id 			INT 			NOT NULL,
+	group_id 			INT  			NOT NULL,
+	PRIMARY KEY (user_id, group_id),
+	FOREIGN KEY (user_id) REFERENCES ds_user(user_id),
+	FOREIGN KEY (group_id) REFERENCES ds_group(group_id)
 );
