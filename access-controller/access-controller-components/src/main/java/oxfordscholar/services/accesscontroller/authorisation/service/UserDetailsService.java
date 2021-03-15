@@ -41,6 +41,14 @@ public class UserDetailsService implements IAuthorisationService
 		this.gson = new Gson();
 		sessionFactory = Persistence.createEntityManagerFactory(DEFAULT_PERSISTENCEUNIT);
 	}
+	
+	public UserDetailsService(String url, EntityManagerFactory emf)
+	{
+		this.rest = new RestConnector(url);
+		this.sql = new SQLConnector();
+		this.gson = new Gson();
+		sessionFactory = emf;
+	}
 
 	/**
 	 * Returns user info from given address
@@ -96,6 +104,12 @@ public class UserDetailsService implements IAuthorisationService
 		Map<String, List<String>> groupMap = new HashMap<String, List<String>>();
 		groupMap.put("groups", groups);
 		return gson.toJson(groupMap);
+	}
+
+	@Override
+	public String getUserRoles(String dn) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }

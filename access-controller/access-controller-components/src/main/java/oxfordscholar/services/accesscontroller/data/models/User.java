@@ -23,12 +23,22 @@ public class User
 	@Column(name = "user_id")
 	private int userId;
 	
+	public void setUserId(int usrId)
+	{
+		userId = usrId;
+	}
+	
 	@Column(name = "name")
 	private String dn;
 	
 	public String getDn()
 	{
 		return dn;
+	}
+	
+	public void setDn(String userDn)
+	{
+		dn = userDn;
 	}
 	
 	@ManyToMany
@@ -41,5 +51,10 @@ public class User
 	public List<Group> getGroups() 
 	{
 		return groups;
+	}
+	
+	public void setGroups(List<Group> userGroups)
+	{
+		groups = userGroups;
 	}
 }

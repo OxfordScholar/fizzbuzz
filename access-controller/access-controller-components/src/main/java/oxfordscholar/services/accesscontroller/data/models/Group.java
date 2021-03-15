@@ -18,12 +18,22 @@ public class Group
 	@Column(name = "group_id")
 	private int groupId;
 	
+	public void setGroupId(int grpId)
+	{
+		groupId = grpId;
+	}
+	
 	@Column(name = "name")
 	private String name;
 	
 	public String getName()
 	{
 		return name;
+	}
+	
+	public void setName(String appName)
+	{
+		name = appName;
 	}
 	
 	@ManyToMany(mappedBy = "groups")
@@ -41,6 +51,11 @@ public class Group
 	public Application getApplication()
 	{
 		return application;
+	}
+	
+	public void setApplication(Application app)
+	{
+		application = app;
 	}
 	
 }

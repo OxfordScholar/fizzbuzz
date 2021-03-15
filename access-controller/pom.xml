@@ -97,6 +97,14 @@
 		    <artifactId>c3p0</artifactId>
 		    <version>0.9.5.5</version>
 		</dependency>
+		
+		<!-- For Unit Testing -->
+		<dependency>
+		    <groupId>org.hsqldb</groupId>
+		    <artifactId>hsqldb</artifactId>
+		    <version>2.5.1</version>
+		    <scope>test</scope>
+		</dependency>
   	
   	</dependencies>
   </dependencyManagement>
