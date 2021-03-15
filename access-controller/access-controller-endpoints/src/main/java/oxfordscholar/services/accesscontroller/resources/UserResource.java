@@ -56,22 +56,29 @@ public class UserResource
 	@Produces(MediaType.APPLICATION_JSON)
 	public String getUserRolesByApplication(@PathParam("dn") String dn, @PathParam("applicationId") String appId)
 	{	
+		try {
+			return authApp.getUserGroupsByApplication(dn, appId);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
-		String userDetails = getUserProfile(dn);
-		
-		SQLConnector connector = new SQLConnector();
-		
-		List<String> roles = connector.getRolesByUserInApp(dn, appId);
-
-		
-		// JSON conversions
-		JsonParser jsonParser = new JsonParser();
-		JsonArray rolesJson = (JsonArray)jsonParser.parse(new Gson().toJson(roles));
-		JsonObject userJson = (JsonObject)jsonParser.parse(userDetails);
-	
-		userJson.add("roles", rolesJson);
-
-		return userJson.toString();
+		return "NOT FOUND";
+//		String userDetails = getUserProfile(dn);
+//		 
+//		SQLConnector connector = new SQLConnector();
+//		
+//		List<String> roles = connector.getRolesByUserInApp(dn, appId);
+//
+//		
+//		// JSON conversions
+//		JsonParser jsonParser = new JsonParser();
+//		JsonArray rolesJson = (JsonArray)jsonParser.parse(new Gson().toJson(roles));
+//		JsonObject userJson = (JsonObject)jsonParser.parse(userDetails);
+//	
+//		userJson.add("roles", rolesJson);
+//
+//		return userJson.toString();
 	}
 	
 	/**

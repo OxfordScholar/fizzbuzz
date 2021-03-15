@@ -17,5 +17,11 @@ public class AuthorisationApplication implements IAuthorisationService{
 		return authService.getUserInfo(dn);
 	}
 
+	@Override
+	public String getUserGroupsByApplication(String dn, String application) throws Exception 
+	{
+		return authService.getUserGroupsByApplication(dn, application);
+	}
+
 }
 
