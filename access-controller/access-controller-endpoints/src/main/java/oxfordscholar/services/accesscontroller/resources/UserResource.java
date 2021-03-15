@@ -1,13 +1,5 @@
 package oxfordscholar.services.accesscontroller.resources;
 
-import oxfordscholar.services.accesscontroller.connectors.*;
-
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import com.google.gson.*;
-
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
@@ -15,8 +7,6 @@ import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import oxfordscholar.services.accesscontroller.authorisation.service.AuthorisationApplication;
-import oxfordscholar.services.accesscontroller.authorisation.AuthorisationServiceFactory;
-
 
 /**
  * 
@@ -90,27 +80,36 @@ public class UserResource
 	}
 	
 	/**
-	 * Obtains all roles held by User
+	 * Obtains all groups held by User
 	 * 
 	 * @param dn Distinguished Name
-	 * @return JSON containing all Roles for User
+	 * @return JSON containing all Groups for User
 	 */
 	@GET
-	@Path("/{dn}/roles")
+	@Path("/{dn}/groups")
 	@Produces(MediaType.APPLICATION_JSON)
 	public String userRoles(@PathParam("dn") String dn)
 	{
-		SQLConnector connector = new SQLConnector();
+//		SQLConnector connector = new SQLConnector();
+//		
+//		List<String> roles = connector.getRolesForUser(dn);
+//		Map<String, List<String>> response = new HashMap() {{
+//			put("roles", roles);
+//			
+//		}};
+//		
+//		//Format results into JSON and return
+//		String json = new Gson().toJson(roles);
+//		return json;
+		try {
+			return authApp.getUserGroups(dn);
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
 		
-		List<String> roles = connector.getRolesForUser(dn);
-		Map<String, List<String>> response = new HashMap() {{
-			put("roles", roles);
-			
-		}};
-		
-		//Format results into JSON and return
-		String json = new Gson().toJson(roles);
-		return json;
+		return "NOT FOUND";
 	}
 	
 	

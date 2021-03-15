@@ -24,9 +24,9 @@ public class AuthorisationApplication implements IAuthorisationService{
 	}
 	
 	@Override
-	public String getUserRoles(String dn) throws Exception
+	public String getUserGroups(String dn) throws Exception
 	{
-		return authService.getUserRoles(dn);
+		return authService.getUserGroups(dn);
 	}
 
 }

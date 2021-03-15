@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.function.Predicate;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.Map;
 
@@ -63,17 +62,17 @@ public class UserDetailsService implements IAuthorisationService
 		
 		
 		// Get roles from SQL
-		List<String> roles = new ArrayList<String>();
-		roles = sql.getRolesForUser(dn);
+		List<String> groups = new ArrayList<String>();
+		groups = sql.getRolesForUser(dn);
 		
 		
 		// Convert to JSON
 		JsonParser jsonParser = new JsonParser();
 		JsonObject json = (JsonObject)jsonParser.parse(rest1Response);
-//		JsonArray rolesJson = new Gson().toJsonTree(roles).getAsJsonArray();
+//		JsonArray groupsJson = new Gson().toJsonTree(groups).getAsJsonArray();
 		
 		// To be used if we need to merge groups into the request
-//		json.add("groups", rolesJson);
+//		json.add("groups", groupsJson);
 		return json.toString();
 		
 	}
@@ -107,8 +106,13 @@ public class UserDetailsService implements IAuthorisationService
 	}
 
 	@Override
-	public String getUserRoles(String dn) throws Exception {
-		// TODO Auto-generated method stub
+	public String getUserGroups(String dn) throws Exception 
+	{
+		EntityManager entityManager = sessionFactory.createEntityManager();
+		entityManager.getTransaction().begin();
+		List<Group> groupList = entity
+		
+		
 		return null;
 	}
 	

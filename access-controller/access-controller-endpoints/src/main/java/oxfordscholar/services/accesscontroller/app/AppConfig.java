@@ -2,8 +2,10 @@ package oxfordscholar.services.accesscontroller.app;
 
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.util.Scanner;
+import java.io.IOException;
+import java.util.Properties;
 
 import org.glassfish.hk2.utilities.binding.AbstractBinder;
 import org.glassfish.jersey.server.ResourceConfig;
@@ -41,7 +43,7 @@ public class AppConfig extends ResourceConfig
 	}
 	
 	/**
-	 * Reads through configuration file for config data
+	 * Reads in configuration file data
 	 */
 	private void loadProperties()
 	{
@@ -53,22 +55,22 @@ public class AppConfig extends ResourceConfig
 		}
 		
 		
-		try
+		try (FileInputStream fileReader = new FileInputStream(fileName))
 		{
-			File configFile = new File(fileName);
-			Scanner scanner = new Scanner(configFile);
-			
-			while (scanner.hasNextLine())
-			{
-				String line = scanner.nextLine();
-				// Add to our config state
-				System.out.println(line);
-			}
+			Properties prop = new Properties();
+			prop.load(fileReader);
 		}
+		
 		catch(FileNotFoundException e)
 		{
 			e.printStackTrace();
+		} 
+		catch (IOException io) 
+		{
+			io.printStackTrace();
 		}
+		
+		
 	}
 
 }

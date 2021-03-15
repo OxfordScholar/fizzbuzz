@@ -55,12 +55,6 @@ public class RestConnector
 					ex.printStackTrace();
 				}
 				
-				finally
-				{
-//					connection.disconnect();
-				}
-				
-				
 				return response.toString();
 	}
 
