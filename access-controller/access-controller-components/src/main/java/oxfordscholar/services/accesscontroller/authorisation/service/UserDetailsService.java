@@ -85,12 +85,12 @@ public class UserDetailsService implements IAuthorisationService
 		
 		User user = userList.get(0);
 		
-		entityManager.getTransaction().commit();
-		entityManager.close();
-		
 		List<Group> userGroups = user.getGroups();
 		Predicate<Group> byApplication = group -> group.getApplication().getName().equals(application);
 		List<String> groups = userGroups.parallelStream().filter(byApplication).map(Group::getName).collect(Collectors.toList());
+		
+		entityManager.getTransaction().commit();
+		entityManager.close();
 		
 		Gson gson = new Gson();
 		Map<String, List<String>> groupMap = new HashMap<String, List<String>>();
