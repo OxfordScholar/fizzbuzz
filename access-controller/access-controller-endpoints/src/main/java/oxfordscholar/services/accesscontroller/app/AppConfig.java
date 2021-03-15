@@ -52,10 +52,11 @@ public class AppConfig extends ResourceConfig
 			fileName = System.getenv("APPLICATION_PROP_FILE");
 		}
 		
-		try 
+		File configFile = new File(fileName);
+
+		
+		try (Scanner scanner = new Scanner(configFile);)
 		{
-			File configFile = new File(fileName);
-			Scanner scanner = new Scanner(configFile);
 			while (scanner.hasNextLine())
 			{
 				String line = scanner.nextLine();
