@@ -8,6 +8,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.EntityManagerFactory;
+
 import oxfordscholar.utilities.models.AppRole;
 import oxfordscholar.utilities.models.UserRole;
 
@@ -19,6 +21,8 @@ public class SQLCrud {
 	private String sqlUrl = "jdbc:mysql://localhost:8090/data";
 	private String username = "root";
 	private String password = "IckyDitto9";
+	private static final String DEFAULT_PERSISTENCEUNIT = "oxfordscholar";
+	private EntityManagerFactory sessionFactory;
 	
 	// ---------- READ OPERATIONS -----------
 	

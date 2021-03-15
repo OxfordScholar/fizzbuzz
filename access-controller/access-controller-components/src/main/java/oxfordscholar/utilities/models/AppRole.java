@@ -7,7 +7,6 @@ package oxfordscholar.utilities.models;
 public class AppRole {
 
 	public String roleName;
-	
 	public String appName;
 	
 }

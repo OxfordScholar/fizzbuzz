@@ -12,7 +12,7 @@ public class AuthorisationApplication implements IAuthorisationService{
 	}
 	
 	@Override
-	public String getUserInfo(String dn)
+	public String getUserInfo(String dn) throws Exception
 	{
 		return authService.getUserInfo(dn);
 	}
@@ -21,6 +21,12 @@ public class AuthorisationApplication implements IAuthorisationService{
 	public String getUserGroupsByApplication(String dn, String application) throws Exception 
 	{
 		return authService.getUserGroupsByApplication(dn, application);
+	}
+	
+	@Override
+	public String getUserRoles(String dn) throws Exception
+	{
+		return authService.getUserRoles(dn);
 	}
 
 }

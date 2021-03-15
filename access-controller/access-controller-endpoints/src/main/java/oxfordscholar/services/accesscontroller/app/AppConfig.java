@@ -1,6 +1,10 @@
 package oxfordscholar.services.accesscontroller.app;
 
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 import org.glassfish.hk2.utilities.binding.AbstractBinder;
 import org.glassfish.jersey.server.ResourceConfig;
 
@@ -16,6 +20,7 @@ public class AppConfig extends ResourceConfig
 	
 	public AppConfig()
 	{
+		this.loadProperties();
 		
 		AuthorisationServiceFactory factory = new AuthorisationServiceFactory();
 		
@@ -33,6 +38,35 @@ public class AppConfig extends ResourceConfig
 			}
 		});
 		packages("oxfordscholar.services.accesscontroller");
+	}
+	
+	/**
+	 * Reads through configuration file for config data
+	 */
+	private void loadProperties()
+	{
+		String fileName = "conf/application.properties";
+		
+		if (System.getenv("APPLICATION_PROP_FILE") != null)
+		{
+			fileName = System.getenv("APPLICATION_PROP_FILE");
+		}
+		
+		try 
+		{
+			File configFile = new File(fileName);
+			Scanner scanner = new Scanner(configFile);
+			while (scanner.hasNextLine())
+			{
+				String line = scanner.nextLine();
+				// Add to our config state
+				System.out.println(line);
+			}
+		}
+		catch(FileNotFoundException e)
+		{
+			e.printStackTrace();
+		}
 	}
 
 }

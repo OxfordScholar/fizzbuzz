@@ -40,8 +40,16 @@ public class UserResource
 	@Produces(MediaType.APPLICATION_JSON)
 	public String getUserProfile(@PathParam("dn") String dn)
 	{
-		// Needs to talk to Rest1
-		return authApp.getUserInfo(dn);
+		try 
+		{
+			return authApp.getUserInfo(dn);
+		}
+		
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return "NOT FOUND";
 	}
 	
 	/**
