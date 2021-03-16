@@ -1,10 +1,8 @@
 package oxfordscholar.services.accesscontroller.resources;
 
-import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.PATCH;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
@@ -16,6 +14,8 @@ public class ApiResource {
 	private static final String DEFAULT_PERSISTENCEUNIT = "oxfordscholar";
 	private EntityManagerFactory sessionFactory;
 	
+	
+	// STUBS
 	public ApiResource()
 	{
 		sessionFactory = Persistence.createEntityManagerFactory(DEFAULT_PERSISTENCEUNIT);

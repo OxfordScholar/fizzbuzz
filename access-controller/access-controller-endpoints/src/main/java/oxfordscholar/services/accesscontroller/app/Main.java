@@ -9,7 +9,7 @@ public class Main {
 
 	public static void main(String[] args) 
 	{
-		int port = 8100;
+		int port = 8100; // TODO - change
 		
 		ServletContextHandler context = new ServletContextHandler(ServletContextHandler.NO_SESSIONS);
 
@@ -34,8 +34,6 @@ public class Main {
 		
 		catch(Exception ex)
 		{
-//			System.getLogger(Main.class.getName()).log(Level.ERROR, null, ex);
-//			System.out.println(ex);
 			ex.printStackTrace();
 		}
 		
