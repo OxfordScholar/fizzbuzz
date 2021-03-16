@@ -7,7 +7,7 @@ import oxfordscholar.services.accesscontroller.authorisation.service.Authorisati
 import oxfordscholar.services.accesscontroller.connectors.SQLConnector;
 
 @Path("/groups")
-public class RoleResource 
+public class GroupResource 
 {
 	
 	@Inject

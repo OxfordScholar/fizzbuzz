@@ -63,7 +63,7 @@ public class UserDetailsService implements IAuthorisationService
 		
 		// Get roles from SQL
 		List<String> groups = new ArrayList<String>();
-		groups = sql.getRolesForUser(dn);
+//		groups = sql.getRolesForUser(dn);
 		
 		
 		// Convert to JSON
@@ -103,17 +103,6 @@ public class UserDetailsService implements IAuthorisationService
 		Map<String, List<String>> groupMap = new HashMap<String, List<String>>();
 		groupMap.put("groups", groups);
 		return gson.toJson(groupMap);
-	}
-
-	@Override
-	public String getUserGroups(String dn) throws Exception 
-	{
-		EntityManager entityManager = sessionFactory.createEntityManager();
-		entityManager.getTransaction().begin();
-		List<Group> groupList = entity
-		
-		
-		return null;
 	}
 	
 }
