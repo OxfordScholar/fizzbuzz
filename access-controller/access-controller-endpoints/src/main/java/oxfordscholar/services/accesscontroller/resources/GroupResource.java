@@ -1,6 +1,7 @@
 package oxfordscholar.services.accesscontroller.resources;
 
 import jakarta.inject.Inject;
+import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import oxfordscholar.services.accesscontroller.authorisation.service.AuthorisationApplication;
@@ -21,6 +22,7 @@ public class GroupResource
 	 * @param dn Distinguished Name
 	 * @return Boolean of whether User holds Role within Application
 	 */
+	@GET
 	@Path("/{applicationId}!{roleId}/members/{dn}")
 	public Boolean doesUserHaveRoleInApp(@PathParam("applicationId") String appId, @PathParam("roleId") int roleId, @PathParam("dn") String dn)
 	{

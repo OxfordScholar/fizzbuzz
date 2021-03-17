@@ -104,5 +104,11 @@ public class UserDetailsService implements IAuthorisationService
 		groupMap.put("groups", groups);
 		return gson.toJson(groupMap);
 	}
+
+	@Override
+	public String getUserGroups(String dn) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 }
