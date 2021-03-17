@@ -8,6 +8,7 @@ import java.util.Arrays;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -74,6 +75,22 @@ public class UserDetailsServiceTest
 		
 	}
 	
-	
+	//For bailey to check
+//	@Test
+//	public void testConnect()
+//	{
+//		EntityManagerFactory emf = Persistence.createEntityManagerFactory("oxfordscholar");
+//		
+//		EntityManager em = emf.createEntityManager();
+//		
+//		em.getTransaction().begin();
+//		
+//		Query query = em.createQuery("SELECT u FROM User u");
+//		User user = (User) query.getResultList().get(0);
+//		System.out.println(user.getDn());
+//		
+//		em.getTransaction().commit();
+//		em.close();
+//	}
 	
 }
