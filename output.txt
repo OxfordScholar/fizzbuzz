@@ -1,33 +1,71 @@
-
+Mar 17, 2021 2:43:54 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: oxfordscholar-unittest]
+Mar 17, 2021 2:43:54 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.4.29.Final
+Mar 17, 2021 2:43:54 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Mar 17, 2021 2:43:54 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
+INFO: HHH010002: C3P0 using driver: org.hsqldb.jdbcDriver at URL: jdbc:hsqldb:mem:test
+Mar 17, 2021 2:43:54 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
+INFO: HHH10001001: Connection properties: {password=****, user=sa}
+Mar 17, 2021 2:43:54 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
+INFO: HHH10001003: Autocommit mode: false
 SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#noProviders for further details.
-Mar 16, 2021 5:22:16 PM org.hibernate.jpa.boot.internal.PersistenceXmlParser parsePersistenceXml
-WARN: HHH015018: Encountered multiple persistence-unit stanzas defining same name [oxfordscholar]; persistence-unit names must be unique
-Mar 16, 2021 5:22:16 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+MLog initialization issue: slf4j found no binding or threatened to use its (dangerously silent) NOPLogger. We consider the slf4j library not found.
+Mar 17, 2021 2:43:54 PM com.mchange.v2.log.MLog 
+INFO: MLog clients using java 1.4+ standard logging.
+Mar 17, 2021 2:43:54 PM com.mchange.v2.c3p0.C3P0Registry 
+INFO: Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+Mar 17, 2021 2:43:54 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
+INFO: HHH10001007: JDBC isolation level: <unknown>
+Mar 17, 2021 2:43:54 PM com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource 
+INFO: Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@b70b94a [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@29fac1a6 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfltagha4i3u1y2u7q2|5851bd4f, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@e6215357 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfltagha4i3u1y2u7q2|40dd3977, jdbcUrl -> jdbc:hsqldb:mem:test, properties -> {password=******, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfltagha4i3u1y2u7q2|28fa700e, numHelperThreads -> 3 ]
+Mar 17, 2021 2:43:54 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+Mar 17, 2021 2:43:55 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@28757abd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Mar 17, 2021 2:43:55 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1d6d1d42] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Mar 17, 2021 2:43:55 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+{"groups":["admin"]}
+Mar 17, 2021 2:43:55 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: oxfordscholar-unittest]
+Mar 17, 2021 2:43:55 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
+INFO: HHH010002: C3P0 using driver: org.hsqldb.jdbcDriver at URL: jdbc:hsqldb:mem:test
+Mar 17, 2021 2:43:55 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
+INFO: HHH10001001: Connection properties: {password=****, user=sa}
+Mar 17, 2021 2:43:55 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
+INFO: HHH10001003: Autocommit mode: false
+Mar 17, 2021 2:43:55 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
+INFO: HHH10001007: JDBC isolation level: <unknown>
+Mar 17, 2021 2:43:55 PM com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource 
+INFO: Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@721bb99a [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@8de7c88e [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfltagha4i3u1y2u7q2|648c5fb3, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@3979c722 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfltagha4i3u1y2u7q2|322e49ee, jdbcUrl -> jdbc:hsqldb:mem:test, properties -> {password=******, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfltagha4i3u1y2u7q2|7126e26, numHelperThreads -> 3 ]
+Mar 17, 2021 2:43:55 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+Mar 17, 2021 2:43:55 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@28cd2c2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Mar 17, 2021 2:43:55 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2e1eb85f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Mar 17, 2021 2:43:55 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Mar 17, 2021 2:43:55 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [name: oxfordscholar]
-Mar 16, 2021 5:22:16 PM org.hibernate.Version logVersion
-INFO: HHH000412: Hibernate ORM core version 5.4.29.Final
-Mar 16, 2021 5:22:16 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
-INFO: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-Mar 16, 2021 5:22:16 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
+Mar 17, 2021 2:43:55 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
 INFO: HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1:3306/oxfordscholar
-Mar 16, 2021 5:22:16 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
+Mar 17, 2021 2:43:55 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
 INFO: HHH10001001: Connection properties: {password=****, user=oxfordscholar}
-Mar 16, 2021 5:22:16 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
+Mar 17, 2021 2:43:55 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
 INFO: HHH10001003: Autocommit mode: false
 Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
-MLog initialization issue: slf4j found no binding or threatened to use its (dangerously silent) NOPLogger. We consider the slf4j library not found.
-Mar 16, 2021 5:22:16 PM com.mchange.v2.log.MLog 
-INFO: MLog clients using java 1.4+ standard logging.
-Mar 16, 2021 5:22:17 PM com.mchange.v2.c3p0.C3P0Registry 
-INFO: Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
-Mar 16, 2021 5:22:17 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
+Mar 17, 2021 2:43:55 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
 INFO: HHH10001007: JDBC isolation level: <unknown>
-Mar 16, 2021 5:22:17 PM com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource 
-INFO: Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@f2bce8e8 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@ab369e36 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hge154agg0cbl627ox3o|22db8f4, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1800, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@d3d2c8ff [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hge154agg0cbl627ox3o|5ab14cb9, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/oxfordscholar, properties -> {password=******, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hge154agg0cbl627ox3o|13c612bd, numHelperThreads -> 3 ]
-Mar 16, 2021 5:22:48 PM com.mchange.v2.resourcepool.BasicResourcePool 
-WARNING: com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@45f2ac16 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+Mar 17, 2021 2:43:55 PM com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource 
+INFO: Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@7d2dc0bb [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@fbd9e0f [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfltagha4i3u1y2u7q2|5d5c41e5, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1800, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@24332784 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfltagha4i3u1y2u7q2|794f11cd, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/oxfordscholar, properties -> {password=******, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfltagha4i3u1y2u7q2|42e4e589, numHelperThreads -> 3 ]
+Mar 17, 2021 2:44:26 PM com.mchange.v2.resourcepool.BasicResourcePool 
+WARNING: com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@179bcd05 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
 java.sql.SQLException: Access denied for user 'oxfordscholar'@'localhost' (using password: YES)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
@@ -45,8 +83,8 @@ java.sql.SQLException: Access denied for user 'oxfordscholar'@'localhost' (using
 	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1908)
 	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
 
-Mar 16, 2021 5:22:48 PM com.mchange.v2.resourcepool.BasicResourcePool 
-WARNING: com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@2ce5f552 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+Mar 17, 2021 2:44:26 PM com.mchange.v2.resourcepool.BasicResourcePool 
+WARNING: com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@259be1fc -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
 java.sql.SQLException: Access denied for user 'oxfordscholar'@'localhost' (using password: YES)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
@@ -64,8 +102,8 @@ java.sql.SQLException: Access denied for user 'oxfordscholar'@'localhost' (using
 	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1908)
 	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
 
-Mar 16, 2021 5:22:48 PM com.mchange.v2.resourcepool.BasicResourcePool 
-WARNING: com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@2f4862ac -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+Mar 17, 2021 2:44:26 PM com.mchange.v2.resourcepool.BasicResourcePool 
+WARNING: com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@33e76f2f -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
 java.sql.SQLException: Access denied for user 'oxfordscholar'@'localhost' (using password: YES)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
@@ -83,13 +121,13 @@ java.sql.SQLException: Access denied for user 'oxfordscholar'@'localhost' (using
 	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1908)
 	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
 
-Mar 16, 2021 5:22:48 PM com.mchange.v2.resourcepool.BasicResourcePool 
-WARNING: Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@53bf7094 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
-Mar 16, 2021 5:22:48 PM com.mchange.v2.resourcepool.BasicResourcePool 
-WARNING: Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@53bf7094 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
-Mar 16, 2021 5:22:48 PM com.mchange.v2.resourcepool.BasicResourcePool 
-WARNING: Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@53bf7094 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
-Mar 16, 2021 5:22:48 PM org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator initiateService
+Mar 17, 2021 2:44:26 PM com.mchange.v2.resourcepool.BasicResourcePool 
+WARNING: Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@2c1f8dbd is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+Mar 17, 2021 2:44:26 PM com.mchange.v2.resourcepool.BasicResourcePool 
+WARNING: Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@2c1f8dbd is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+Mar 17, 2021 2:44:26 PM com.mchange.v2.resourcepool.BasicResourcePool 
+WARNING: Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@2c1f8dbd is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+Mar 17, 2021 2:44:26 PM org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator initiateService
 WARN: HHH000342: Could not obtain connection to query metadata
 java.sql.SQLException: Connections could not be acquired from the underlying database!
 	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:118)
@@ -114,17 +152,41 @@ java.sql.SQLException: Connections could not be acquired from the underlying dat
 	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56)
 	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
 	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
-	at oxfordscholar.services.accesscontroller.authorisation.service.UserDetailsService.<init>(UserDetailsService.java:41)
-	at oxfordscholar.services.accesscontroller.authorisation.AuthorisationServiceFactory.buildAuthService(AuthorisationServiceFactory.java:16)
-	at oxfordscholar.services.accesscontroller.app.AppConfig.<init>(AppConfig.java:30)
-	at oxfordscholar.services.accesscontroller.app.Main.main(Main.java:17)
+	at oxfordscholar.services.accesscontroller.connectors.UserDetailsServiceTest.testConnect(UserDetailsServiceTest.java:82)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
 Caused by: com.mchange.v2.resourcepool.CannotAcquireResourceException: A ResourcePool could not acquire a resource from its primary factory or source.
 	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1507)
 	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:644)
 	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:554)
 	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutAndMarkConnectionInUse(C3P0PooledConnectionPool.java:758)
 	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:685)
-	... 24 more
+	... 48 more
 Caused by: java.sql.SQLException: Access denied for user 'oxfordscholar'@'localhost' (using password: YES)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
@@ -142,55 +204,74 @@ Caused by: java.sql.SQLException: Access denied for user 'oxfordscholar'@'localh
 	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1908)
 	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
 
-Mar 16, 2021 5:22:48 PM org.hibernate.dialect.Dialect <init>
+Mar 17, 2021 2:44:26 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-Mar 16, 2021 5:22:48 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+Mar 17, 2021 2:44:26 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
 INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-Mar 16, 2021 5:22:49 PM org.glassfish.jersey.message.internal.MessagingBinders$EnabledProvidersBinder bindToBinder
-WARNING: A class jakarta.activation.DataSource for a default provider MessageBodyWriter<jakarta.activation.DataSource> was not found. The provider is not available.
-Mar 16, 2021 5:22:49 PM org.glassfish.jersey.server.wadl.WadlFeature configure
-WARNING: JAX-B API not found . WADL feature is disabled.
-Mar 16, 2021 5:22:49 PM org.glassfish.jersey.internal.Errors logErrors
-SEVERE: Following issues have been detected: 
-WARNING: Both resources, resource Builder{names=[[unnamed], [unnamed]], path='/{applicationId}!{roleId}/members/{dn}', methodBuilders=[], childResourceBuilders=[], childResources=[], resourceMethods=[], subResourceLocator=httpMethod=null, consumedTypes=[], producedTypes=[], suspended=false, suspendTimeout=0, suspendTimeoutUnit=MILLISECONDS, invocable=Invocable{handler=ClassBasedMethodHandler{handlerClass=class oxfordscholar.services.accesscontroller.resources.RoleResource, handlerConstructors=[org.glassfish.jersey.server.model.HandlerConstructor@5438fa43]}, definitionMethod=public java.lang.Boolean oxfordscholar.services.accesscontroller.resources.RoleResource.doesUserHaveRoleInApp(java.lang.String,int,java.lang.String), parameters=[Parameter [type=class java.lang.String, source=applicationId, defaultValue=null], Parameter [type=int, source=roleId, defaultValue=null], Parameter [type=class java.lang.String, source=dn, defaultValue=null]], responseType=class java.lang.Boolean}, nameBindings=[], handlerClasses=[class oxfordscholar.services.accesscontroller.resources.RoleResource], handlerInstances=[], parentResource=<no parent>, extended=false} and resource Resource{"/{applicationId}!{roleId}/members/{dn}", 0 child resources, 0 resource methods, 1 sub-resource locator, 1 method handler classes, 0 method handler instances}, contains sub resource locators on the same path /{applicationId}!{roleId}/members/{dn}.
+Mar 17, 2021 2:44:57 PM com.mchange.v2.resourcepool.BasicResourcePool 
+WARNING: com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@12e82ba0 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Access denied for user 'oxfordscholar'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1176)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1163)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1908)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
 
-jakarta.servlet.ServletException: org.glassfish.jersey.servlet.ServletContainer-4b0bd001==org.glassfish.jersey.servlet.ServletContainer@8a56253b{jsp=null,order=-1,inst=true,async=true,src=EMBEDDED:null}
-	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:648)
-	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:412)
-	at org.eclipse.jetty.servlet.ServletHandler.lambda$initialize$2(ServletHandler.java:699)
-	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
-	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:723)
-	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:396)
-	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:868)
-	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:310)
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:98)
-	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:174)
-	at org.eclipse.jetty.server.Server.start(Server.java:474)
-	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117)
-	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:94)
-	at org.eclipse.jetty.server.Server.doStart(Server.java:419)
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:98)
-	at oxfordscholar.services.accesscontroller.app.Main.main(Main.java:31)
-Caused by: org.glassfish.jersey.server.model.ModelValidationException: Validation of the application resource model has failed during application initialization.
-[[FATAL] Both resources, resource Builder{names=[[unnamed], [unnamed]], path='/{applicationId}!{roleId}/members/{dn}', methodBuilders=[], childResourceBuilders=[], childResources=[], resourceMethods=[], subResourceLocator=httpMethod=null, consumedTypes=[], producedTypes=[], suspended=false, suspendTimeout=0, suspendTimeoutUnit=MILLISECONDS, invocable=Invocable{handler=ClassBasedMethodHandler{handlerClass=class oxfordscholar.services.accesscontroller.resources.RoleResource, handlerConstructors=[org.glassfish.jersey.server.model.HandlerConstructor@5438fa43]}, definitionMethod=public java.lang.Boolean oxfordscholar.services.accesscontroller.resources.RoleResource.doesUserHaveRoleInApp(java.lang.String,int,java.lang.String), parameters=[Parameter [type=class java.lang.String, source=applicationId, defaultValue=null], Parameter [type=int, source=roleId, defaultValue=null], Parameter [type=class java.lang.String, source=dn, defaultValue=null]], responseType=class java.lang.Boolean}, nameBindings=[], handlerClasses=[class oxfordscholar.services.accesscontroller.resources.RoleResource], handlerInstances=[], parentResource=<no parent>, extended=false} and resource Resource{"/{applicationId}!{roleId}/members/{dn}", 0 child resources, 0 resource methods, 1 sub-resource locator, 1 method handler classes, 0 method handler instances}, contains sub resource locators on the same path /{applicationId}!{roleId}/members/{dn}.; source='org.glassfish.jersey.server.model.Resource$Builder$1@61da0413']
-	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:371)
-	at org.glassfish.jersey.server.ApplicationHandler.lambda$initialize$1(ApplicationHandler.java:293)
-	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
-	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
-	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:232)
-	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:292)
-	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:259)
-	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:311)
-	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:154)
-	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:347)
-	at jakarta.servlet.GenericServlet.init(GenericServlet.java:178)
-	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:630)
-	... 20 more
-Exception in thread "main" java.lang.IllegalStateException: !STOPPED
-	at org.eclipse.jetty.server.handler.HandlerWrapper.destroy(HandlerWrapper.java:140)
-	at oxfordscholar.services.accesscontroller.app.Main.main(Main.java:44)
+Mar 17, 2021 2:44:57 PM com.mchange.v2.resourcepool.BasicResourcePool 
+WARNING: com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@186f82e2 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Access denied for user 'oxfordscholar'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1176)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1163)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1908)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+
+Mar 17, 2021 2:44:57 PM com.mchange.v2.resourcepool.BasicResourcePool 
+WARNING: com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@1a9a277f -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Access denied for user 'oxfordscholar'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1176)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1163)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1908)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+
+Mar 17, 2021 2:44:57 PM com.mchange.v2.resourcepool.BasicResourcePool 
+WARNING: Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@2c1f8dbd is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+Mar 17, 2021 2:44:57 PM com.mchange.v2.resourcepool.BasicResourcePool 
+WARNING: Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@2c1f8dbd is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+Mar 17, 2021 2:44:57 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+WARN: SQL Error: 0, SQLState: null
+Mar 17, 2021 2:44:57 PM com.mchange.v2.resourcepool.BasicResourcePool 
+WARNING: Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@2c1f8dbd is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+Mar 17, 2021 2:44:57 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+ERROR: Connections could not be acquired from the underlying database!
