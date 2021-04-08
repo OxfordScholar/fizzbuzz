@@ -15,9 +15,23 @@
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="jakarta.ws.rs.Path"/>
     <fullyQualifiedTypeName name="jakarta.ws.rs.Produces"/>
     <fullyQualifiedTypeName name="jakarta.ws.rs.core.MediaType"/>
     <fullyQualifiedTypeName name="jakarta.ws.rs.GET"/>
     <fullyQualifiedTypeName name="org.glassfish.jersey.server.ResourceConfig"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="javax.persistence.NamedQueries"/>
+    <fullyQualifiedTypeName name="javax.persistence.NamedQuery"/>
+    <fullyQualifiedTypeName name="jakarta.ws.rs.Path"/>
+    <fullyQualifiedTypeName name="jakarta.ws.rs.PATCH"/>
+    <fullyQualifiedTypeName name="jakarta.ws.rs.PathParam"/>
+    <fullyQualifiedTypeName name="jakarta.ws.rs.DELETE"/>
+    <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+    <fullyQualifiedTypeName name="jakarta.ws.rs.POST"/>
 </qualifiedTypeNameHistroy>

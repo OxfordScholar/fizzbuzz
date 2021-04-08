@@ -10,7 +10,7 @@
 		<class>oxfordscholar.services.accesscontroller.data.models.User</class>
 		<properties>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/oxfordscholar"/>
-			<property name="javax.persistence.jdbc.user" value="oxfordscholar"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
 			<property name="javax.persistence.jdbc.password" value="OxfordScholar1!"/>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
 			
